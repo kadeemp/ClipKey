@@ -50,7 +50,11 @@ class KeyManager {
 
     func keyAt(index:Int) -> String {
         let key = keysArray[index]
-        return key.value(forKey: "item") as! String
+        return key.value(forKey: "label") as! String
+    }
+    func keyContentAt(index:Int) -> String {
+        let key = keysArray[index]
+        return key.value(forKey: "content") as! String
     }
 
     // Add a new key
@@ -60,7 +64,13 @@ class KeyManager {
         print(label)
         let entity = NSEntityDescription.entity(forEntityName: "Key", in: (context)!)
         let key = NSManagedObject(entity: entity!, insertInto: context)
-        key.setValue(label, forKey: "item")
+        key.setValue(label, forKey: "label")
+        if content != nil {
+            key.setValue(content, forKey: "content")
+        }
+        else {
+            key.setValue(label, forKey: "content")
+        }
         print("----------")
         print(key)
 
