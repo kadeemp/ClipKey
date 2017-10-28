@@ -16,7 +16,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         navigationItem.rightBarButtonItem = editButtonItem
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+//var titles = []
+//var keys = []
     var titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
     var keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
 

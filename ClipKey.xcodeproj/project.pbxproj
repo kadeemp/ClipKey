@@ -19,6 +19,7 @@
 		F42DCEB21FA417C8002147BB /* Clipboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F42DCEAB1FA417C8002147BB /* Clipboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEB71FA417DD002147BB /* Clipboard.storyboard */; };
 		F42DCEBB1FA41BE4002147BB /* ClipBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */; };
+		F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBC1FA44D14002147BB /* KeyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		F42DCEB71FA417DD002147BB /* Clipboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clipboard.storyboard; sourceTree = "<group>"; };
 		F42DCEB91FA419BC002147BB /* Clipboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipboard.entitlements; sourceTree = "<group>"; };
 		F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClipBoard.xib; sourceTree = "<group>"; };
+		F42DCEBC1FA44D14002147BB /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				F42DCE761FA41746002147BB /* AppDelegate.swift */,
 				F42DCE781FA41746002147BB /* ViewController.swift */,
+				F42DCEBC1FA44D14002147BB /* KeyManager.swift */,
 				F42DCE7A1FA41746002147BB /* Main.storyboard */,
 				F42DCE801FA41746002147BB /* Assets.xcassets */,
 				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
@@ -360,6 +363,7 @@
 				F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */,
 				F42DCE791FA41746002147BB /* ViewController.swift in Sources */,
 				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
+				F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
