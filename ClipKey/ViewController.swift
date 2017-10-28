@@ -14,10 +14,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.title = "ClipKey"
         navigationItem.rightBarButtonItem = editButtonItem
+
+        for i in 0..<titles.count{
+            KeyManager.sharedInstance.addKey(label: titles[i], content: keys[i])
+        }
+        KeyManager.sharedInstance.loadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 //var titles = []
 //var keys = []
+
     var titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
     var keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
 
