@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             titles.append(key.value(forKey: "label") as! String)
             keys.append(key.value(forKey: "content") as! String)
         }
+        loadView()
     }
 
     var titles:[String] = []
@@ -31,7 +32,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //    var titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
 //    var keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
 
+    @IBAction func newKeyButtonPressed(_ sender: Any) {
+        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
+            navigationController?.pushViewController(newKeyView, animated: true)
+        }
+    }
+    @IBOutlet weak var newKeyButtonPressed: UIButton!
     @IBOutlet weak var keysTable: UITableView!
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
     }
@@ -48,6 +56,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             titles.remove(at: indexPath.row)
             KeyManager.sharedInstance.remove(index: indexPath.row)
             keysTable.deleteRows(at: [indexPath] , with: .fade)
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
+            navigationController?.pushViewController(newKeyView, animated: true)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let allKeys = KeyManager.sharedInstance.loadData()
+        if segue.identifier == "viewKey" {
+            if let indexPath = keysTable.indexPathForSelectedRow {
+                let destVC = segue.destination as! KeyViewController
+  //              destVC.key = allKeys[indexPath]
+ 
+
+            }
         }
     }
 
