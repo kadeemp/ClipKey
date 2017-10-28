@@ -22,9 +22,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             var key = allKeys[i]
             titles.append(key.value(forKey: "label") as! String)
             keys.append(key.value(forKey: "content") as! String)
-
         }
     }
+
     var titles:[String] = []
     var keys:[String] = []
 
@@ -46,6 +46,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         if editingStyle == .delete {
             titles.remove(at: indexPath.row)
+            KeyManager.sharedInstance.remove(index: indexPath.row)
             keysTable.deleteRows(at: [indexPath] , with: .fade)
         }
     }
