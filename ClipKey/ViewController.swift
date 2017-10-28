@@ -14,18 +14,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.title = "ClipKey"
         navigationItem.rightBarButtonItem = editButtonItem
-
-        for i in 0..<titles.count{
-            KeyManager.sharedInstance.addKey(label: titles[i], content: keys[i])
-        }
-        KeyManager.sharedInstance.loadData()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-//var titles = []
-//var keys = []
 
-    var titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
-    var keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
+    override func viewWillAppear(_ animated: Bool) {
+        let allKeys = KeyManager.sharedInstance.loadData()
+        for i in 0..<allKeys.count {
+            var key = allKeys[i]
+            titles.append(key.value(forKey: "label") as! String)
+            keys.append(key.value(forKey: "content") as! String)
+
+        }
+    }
+    var titles:[String] = []
+    var keys:[String] = []
+
+//    var titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
+//    var keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
 
     @IBOutlet weak var keysTable: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
