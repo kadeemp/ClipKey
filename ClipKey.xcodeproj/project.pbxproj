@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE761FA41746002147BB /* AppDelegate.swift */; };
+		F42DCE791FA41746002147BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE781FA41746002147BB /* ViewController.swift */; };
+		F42DCE7C1FA41746002147BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCE7A1FA41746002147BB /* Main.storyboard */; };
+		F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */; };
+		F42DCE811FA41746002147BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42DCE801FA41746002147BB /* Assets.xcassets */; };
+		F42DCE841FA41746002147BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCE821FA41746002147BB /* LaunchScreen.storyboard */; };
+		F42DCE8F1FA41746002147BB /* ClipKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE8E1FA41746002147BB /* ClipKeyTests.swift */; };
+		F42DCE9A1FA41747002147BB /* ClipKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE991FA41747002147BB /* ClipKeyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F42DCE8B1FA41746002147BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42DCE6B1FA41746002147BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42DCE721FA41746002147BB;
+			remoteInfo = ClipKey;
+		};
+		F42DCE961FA41746002147BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42DCE6B1FA41746002147BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42DCE721FA41746002147BB;
+			remoteInfo = ClipKey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F42DCE731FA41746002147BB /* ClipKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42DCE761FA41746002147BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F42DCE781FA41746002147BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F42DCE7B1FA41746002147BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F42DCE7E1FA41746002147BB /* ClipKey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClipKey.xcdatamodel; sourceTree = "<group>"; };
+		F42DCE801FA41746002147BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F42DCE831FA41746002147BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F42DCE851FA41746002147BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42DCE8A1FA41746002147BB /* ClipKeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipKeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42DCE8E1FA41746002147BB /* ClipKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipKeyTests.swift; sourceTree = "<group>"; };
+		F42DCE901FA41746002147BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42DCE991FA41747002147BB /* ClipKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipKeyUITests.swift; sourceTree = "<group>"; };
+		F42DCE9B1FA41747002147BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42DCE701FA41746002147BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCE871FA41746002147BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCE921FA41746002147BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42DCE6A1FA41746002147BB = {
+			isa = PBXGroup;
+			children = (
+				F42DCE751FA41746002147BB /* ClipKey */,
+				F42DCE8D1FA41746002147BB /* ClipKeyTests */,
+				F42DCE981FA41747002147BB /* ClipKeyUITests */,
+				F42DCE741FA41746002147BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F42DCE741FA41746002147BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCE731FA41746002147BB /* ClipKey.app */,
+				F42DCE8A1FA41746002147BB /* ClipKeyTests.xctest */,
+				F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42DCE751FA41746002147BB /* ClipKey */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCE761FA41746002147BB /* AppDelegate.swift */,
+				F42DCE781FA41746002147BB /* ViewController.swift */,
+				F42DCE7A1FA41746002147BB /* Main.storyboard */,
+				F42DCE801FA41746002147BB /* Assets.xcassets */,
+				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
+				F42DCE851FA41746002147BB /* Info.plist */,
+				F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */,
+			);
+			path = ClipKey;
+			sourceTree = "<group>";
+		};
+		F42DCE8D1FA41746002147BB /* ClipKeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCE8E1FA41746002147BB /* ClipKeyTests.swift */,
+				F42DCE901FA41746002147BB /* Info.plist */,
+			);
+			path = ClipKeyTests;
+			sourceTree = "<group>";
+		};
+		F42DCE981FA41747002147BB /* ClipKeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCE991FA41747002147BB /* ClipKeyUITests.swift */,
+				F42DCE9B1FA41747002147BB /* Info.plist */,
+			);
+			path = ClipKeyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42DCE721FA41746002147BB /* ClipKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42DCE9E1FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKey" */;
+			buildPhases = (
+				F42DCE6F1FA41746002147BB /* Sources */,
+				F42DCE701FA41746002147BB /* Frameworks */,
+				F42DCE711FA41746002147BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipKey;
+			productName = ClipKey;
+			productReference = F42DCE731FA41746002147BB /* ClipKey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F42DCE891FA41746002147BB /* ClipKeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42DCEA11FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKeyTests" */;
+			buildPhases = (
+				F42DCE861FA41746002147BB /* Sources */,
+				F42DCE871FA41746002147BB /* Frameworks */,
+				F42DCE881FA41746002147BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42DCE8C1FA41746002147BB /* PBXTargetDependency */,
+			);
+			name = ClipKeyTests;
+			productName = ClipKeyTests;
+			productReference = F42DCE8A1FA41746002147BB /* ClipKeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F42DCE941FA41746002147BB /* ClipKeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42DCEA41FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKeyUITests" */;
+			buildPhases = (
+				F42DCE911FA41746002147BB /* Sources */,
+				F42DCE921FA41746002147BB /* Frameworks */,
+				F42DCE931FA41746002147BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42DCE971FA41746002147BB /* PBXTargetDependency */,
+			);
+			name = ClipKeyUITests;
+			productName = ClipKeyUITests;
+			productReference = F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42DCE6B1FA41746002147BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Kadeem Palacios";
+				TargetAttributes = {
+					F42DCE721FA41746002147BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					F42DCE891FA41746002147BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F42DCE721FA41746002147BB;
+					};
+					F42DCE941FA41746002147BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F42DCE721FA41746002147BB;
+					};
+				};
+			};
+			buildConfigurationList = F42DCE6E1FA41746002147BB /* Build configuration list for PBXProject "ClipKey" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F42DCE6A1FA41746002147BB;
+			productRefGroup = F42DCE741FA41746002147BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F42DCE721FA41746002147BB /* ClipKey */,
+				F42DCE891FA41746002147BB /* ClipKeyTests */,
+				F42DCE941FA41746002147BB /* ClipKeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42DCE711FA41746002147BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCE841FA41746002147BB /* LaunchScreen.storyboard in Resources */,
+				F42DCE811FA41746002147BB /* Assets.xcassets in Resources */,
+				F42DCE7C1FA41746002147BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCE881FA41746002147BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCE931FA41746002147BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42DCE6F1FA41746002147BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */,
+				F42DCE791FA41746002147BB /* ViewController.swift in Sources */,
+				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCE861FA41746002147BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCE8F1FA41746002147BB /* ClipKeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCE911FA41746002147BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCE9A1FA41747002147BB /* ClipKeyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42DCE8C1FA41746002147BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42DCE721FA41746002147BB /* ClipKey */;
+			targetProxy = F42DCE8B1FA41746002147BB /* PBXContainerItemProxy */;
+		};
+		F42DCE971FA41746002147BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42DCE721FA41746002147BB /* ClipKey */;
+			targetProxy = F42DCE961FA41746002147BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F42DCE7A1FA41746002147BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42DCE7B1FA41746002147BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F42DCE821FA41746002147BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42DCE831FA41746002147BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F42DCE9C1FA41747002147BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F42DCE9D1FA41747002147BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F42DCE9F1FA41747002147BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F42DCEA01FA41747002147BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F42DCEA21FA41747002147BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipKey.app/ClipKey";
+			};
+			name = Debug;
+		};
+		F42DCEA31FA41747002147BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipKey.app/ClipKey";
+			};
+			name = Release;
+		};
+		F42DCEA51FA41747002147BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClipKey;
+			};
+			name = Debug;
+		};
+		F42DCEA61FA41747002147BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClipKey;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F42DCE6E1FA41746002147BB /* Build configuration list for PBXProject "ClipKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42DCE9C1FA41747002147BB /* Debug */,
+				F42DCE9D1FA41747002147BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42DCE9E1FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42DCE9F1FA41747002147BB /* Debug */,
+				F42DCEA01FA41747002147BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42DCEA11FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42DCEA21FA41747002147BB /* Debug */,
+				F42DCEA31FA41747002147BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42DCEA41FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42DCEA51FA41747002147BB /* Debug */,
+				F42DCEA61FA41747002147BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F42DCE7E1FA41746002147BB /* ClipKey.xcdatamodel */,
+			);
+			currentVersion = F42DCE7E1FA41746002147BB /* ClipKey.xcdatamodel */;
+			path = ClipKey.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F42DCE6B1FA41746002147BB /* Project object */;
+}
