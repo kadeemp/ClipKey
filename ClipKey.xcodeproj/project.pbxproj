@@ -15,6 +15,10 @@
 		F42DCE841FA41746002147BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCE821FA41746002147BB /* LaunchScreen.storyboard */; };
 		F42DCE8F1FA41746002147BB /* ClipKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE8E1FA41746002147BB /* ClipKeyTests.swift */; };
 		F42DCE9A1FA41747002147BB /* ClipKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE991FA41747002147BB /* ClipKeyUITests.swift */; };
+		F42DCEAE1FA417C8002147BB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */; };
+		F42DCEB21FA417C8002147BB /* Clipboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F42DCEAB1FA417C8002147BB /* Clipboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEB71FA417DD002147BB /* Clipboard.storyboard */; };
+		F42DCEBB1FA41BE4002147BB /* ClipBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = F42DCE721FA41746002147BB;
 			remoteInfo = ClipKey;
 		};
+		F42DCEB01FA417C8002147BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42DCE6B1FA41746002147BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42DCEAA1FA417C8002147BB;
+			remoteInfo = Clipboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F42DCEB61FA417C8002147BB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F42DCEB21FA417C8002147BB /* Clipboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F42DCE731FA41746002147BB /* ClipKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +74,12 @@
 		F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42DCE991FA41747002147BB /* ClipKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipKeyUITests.swift; sourceTree = "<group>"; };
 		F42DCE9B1FA41747002147BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42DCEAB1FA417C8002147BB /* Clipboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Clipboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F42DCEAF1FA417C8002147BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42DCEB71FA417DD002147BB /* Clipboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clipboard.storyboard; sourceTree = "<group>"; };
+		F42DCEB91FA419BC002147BB /* Clipboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipboard.entitlements; sourceTree = "<group>"; };
+		F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClipBoard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F42DCEA81FA417C8002147BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +120,7 @@
 				F42DCE751FA41746002147BB /* ClipKey */,
 				F42DCE8D1FA41746002147BB /* ClipKeyTests */,
 				F42DCE981FA41747002147BB /* ClipKeyUITests */,
+				F42DCEAC1FA417C8002147BB /* Clipboard */,
 				F42DCE741FA41746002147BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +131,7 @@
 				F42DCE731FA41746002147BB /* ClipKey.app */,
 				F42DCE8A1FA41746002147BB /* ClipKeyTests.xctest */,
 				F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */,
+				F42DCEAB1FA417C8002147BB /* Clipboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +168,18 @@
 			path = ClipKeyUITests;
 			sourceTree = "<group>";
 		};
+		F42DCEAC1FA417C8002147BB /* Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCEB91FA419BC002147BB /* Clipboard.entitlements */,
+				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
+				F42DCEAF1FA417C8002147BB /* Info.plist */,
+				F42DCEB71FA417DD002147BB /* Clipboard.storyboard */,
+				F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */,
+			);
+			path = Clipboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +190,12 @@
 				F42DCE6F1FA41746002147BB /* Sources */,
 				F42DCE701FA41746002147BB /* Frameworks */,
 				F42DCE711FA41746002147BB /* Resources */,
+				F42DCEB61FA417C8002147BB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F42DCEB11FA417C8002147BB /* PBXTargetDependency */,
 			);
 			name = ClipKey;
 			productName = ClipKey;
@@ -184,6 +238,23 @@
 			productReference = F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F42DCEAA1FA417C8002147BB /* Clipboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42DCEB31FA417C8002147BB /* Build configuration list for PBXNativeTarget "Clipboard" */;
+			buildPhases = (
+				F42DCEA71FA417C8002147BB /* Sources */,
+				F42DCEA81FA417C8002147BB /* Frameworks */,
+				F42DCEA91FA417C8002147BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clipboard;
+			productName = Clipboard;
+			productReference = F42DCEAB1FA417C8002147BB /* Clipboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +268,11 @@
 					F42DCE721FA41746002147BB = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					F42DCE891FA41746002147BB = {
 						CreatedOnToolsVersion = 9.0;
@@ -207,6 +283,15 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F42DCE721FA41746002147BB;
+					};
+					F42DCEAA1FA417C8002147BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -226,6 +311,7 @@
 				F42DCE721FA41746002147BB /* ClipKey */,
 				F42DCE891FA41746002147BB /* ClipKeyTests */,
 				F42DCE941FA41746002147BB /* ClipKeyUITests */,
+				F42DCEAA1FA417C8002147BB /* Clipboard */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +338,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DCEA91FA417C8002147BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCEBB1FA41BE4002147BB /* ClipBoard.xib in Resources */,
+				F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +379,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F42DCEA71FA417C8002147BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42DCEAE1FA417C8002147BB /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +399,11 @@
 			isa = PBXTargetDependency;
 			target = F42DCE721FA41746002147BB /* ClipKey */;
 			targetProxy = F42DCE961FA41746002147BB /* PBXContainerItemProxy */;
+		};
+		F42DCEB11FA417C8002147BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42DCEAA1FA417C8002147BB /* Clipboard */;
+			targetProxy = F42DCEB01FA417C8002147BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -429,6 +537,7 @@
 		F42DCE9F1FA41747002147BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
@@ -444,6 +553,7 @@
 		F42DCEA01FA41747002147BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
@@ -522,6 +632,36 @@
 			};
 			name = Release;
 		};
+		F42DCEB41FA417C8002147BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = Clipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey.Clipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F42DCEB51FA417C8002147BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = Clipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey.Clipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +697,15 @@
 			buildConfigurations = (
 				F42DCEA51FA41747002147BB /* Debug */,
 				F42DCEA61FA41747002147BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42DCEB31FA417C8002147BB /* Build configuration list for PBXNativeTarget "Clipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42DCEB41FA417C8002147BB /* Debug */,
+				F42DCEB51FA417C8002147BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
