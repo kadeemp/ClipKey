@@ -19,15 +19,22 @@ class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITa
     }
     @IBOutlet weak var clipboard: UITableView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    override func viewWillAppear(_ animated: Bool) {
+        let allKeys = KeyManager.sharedInstance.loadData()
+        for i in 0..<allKeys.count {
+            var key = allKeys[i]
+            titles.append(key.value(forKey: "label") as! String)
+            keys.append(key.value(forKey: "content") as! String)
+        }
 
     }
-    let titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
-    let keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
+
+    var titles:[String] = []
+    var keys:[String] = []
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return titles.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

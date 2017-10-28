@@ -79,10 +79,10 @@ class KeyManager {
 
         do {
             try context?.save()
-            print("Pantry Count Saved. Current Count : \(count)")
+            print("Key Count Saved. Current Count : \(count)")
         } catch let error as NSError {
             print("Error: \(error) \(error.userInfo)" )
-            fatalError("PantryManager * Error in storing to data")
+            fatalError("KeyManager * Error in storing to data")
         }
     }
 

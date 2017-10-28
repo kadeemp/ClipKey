@@ -23,7 +23,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             titles.append(key.value(forKey: "label") as! String)
             keys.append(key.value(forKey: "content") as! String)
         }
-        loadView()
+        
     }
 
     var titles:[String] = []
@@ -59,9 +59,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
-            navigationController?.pushViewController(newKeyView, animated: true)
-        }
+//        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
+//            navigationController?.pushViewController(newKeyView, animated: true)
+        performSegue(withIdentifier: "viewKey", sender: self)
+      //  }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -69,7 +70,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if segue.identifier == "viewKey" {
             if let indexPath = keysTable.indexPathForSelectedRow {
                 let destVC = segue.destination as! KeyViewController
-  //              destVC.key = allKeys[indexPath]
+                destVC.indexOfKey = indexPath.row
+                print(#function)
+                print(indexPath.row)
+
  
 
             }
