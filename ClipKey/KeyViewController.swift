@@ -10,10 +10,9 @@ import UIKit
 
 class KeyViewController: UIViewController {
    // var key:NSManagedObject = nil
-
     var keyLabel:String = ""
     var keyContent:String = ""
-    var indexOfKey:Int = 0
+    var indexOfKey:Int? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 //        if key != nil {
@@ -23,12 +22,13 @@ class KeyViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        print(indexOfKey)
+
+        print(indexOfKey!)
 
         //Does not account for if there is only 1 Key
-        if indexOfKey != 0 {
-            keyLabel  = KeyManager.sharedInstance.keyAt(index: indexOfKey)
-            keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey)
+        if indexOfKey != nil {
+            keyLabel  = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
+            keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey!)
             labelTextField.text = keyLabel
             contentTextField.text = keyContent
         }
@@ -38,7 +38,6 @@ class KeyViewController: UIViewController {
 
     @IBAction func saveButtonPressed(_ sender: Any) {
         KeyManager.sharedInstance.addKey(label: labelTextField.text!, content: contentTextField.text!)
-        
         navigationController?.popToRootViewController(animated: true)
     }
     /*
