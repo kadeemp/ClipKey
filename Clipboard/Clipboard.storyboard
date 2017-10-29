@@ -20,9 +20,12 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-TS-2i8">
                                 <rect key="frame" x="262" y="0.0" width="58" height="160"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.66198048857868019" green="0.084038425514428458" blue="0.15089757507292759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="nextKeyboardButtonPressed:" destination="zn9-be-5fE" eventType="touchUpInside" id="ifd-V0-RVy"/>
+                                    <action selector="nextKeyboardButtonPressed1:" destination="zn9-be-5fE" eventType="touchUpInside" id="NmD-gh-2Sz"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Ua-CA-04w">
@@ -47,6 +50,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fC3-TS-2i8" firstAttribute="trailing" secondItem="HOB-AJ-Tmx" secondAttribute="trailing" id="10v-VB-GIp"/>
                             <constraint firstItem="1Ua-CA-04w" firstAttribute="width" secondItem="V5i-mf-KYo" secondAttribute="width" multiplier="9/11" id="3uC-mm-7ds"/>
@@ -64,7 +68,7 @@
                     <size key="freeformSize" width="320" height="160"/>
                     <connections>
                         <outlet property="clipboard" destination="1Ua-CA-04w" id="TyV-t4-OKo"/>
-                        <outlet property="nextKeyboardButton" destination="fC3-TS-2i8" id="mO2-y4-weL"/>
+                        <outlet property="nextKeyboardButton" destination="fC3-TS-2i8" id="wbY-Es-6GC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJd-jE-KwE" userLabel="First Responder" sceneMemberID="firstResponder"/>

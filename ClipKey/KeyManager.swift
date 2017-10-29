@@ -15,6 +15,7 @@ class KeyManager {
     static let sharedInstance = KeyManager()
     var keysArray = [NSManagedObject]()
     var context: NSManagedObjectContext?
+    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
 
     var count:Int {
         get {
