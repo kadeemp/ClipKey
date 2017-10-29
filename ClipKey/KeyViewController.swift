@@ -9,7 +9,7 @@
 import UIKit
 
 class KeyViewController: UIViewController {
-   // var key:NSManagedObject = nil
+
     var keyLabel:String = ""
     var keyContent:String = ""
     var indexOfKey:Int? = nil
@@ -23,7 +23,7 @@ class KeyViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
 
-        print(indexOfKey!)
+     
 
         //Does not account for if there is only 1 Key
         if indexOfKey != nil {
@@ -38,6 +38,7 @@ class KeyViewController: UIViewController {
 
     @IBAction func saveButtonPressed(_ sender: Any) {
         KeyManager.sharedInstance.addKey(label: labelTextField.text!, content: contentTextField.text!)
+       // HomeViewController.sharedInstance.reloadTable()
         navigationController?.popToRootViewController(animated: true)
     }
     /*

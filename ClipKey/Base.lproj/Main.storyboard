@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPw-Bp-JV5">
-                                <rect key="frame" x="0.0" y="64" width="375" height="67.5"/>
+                                <rect key="frame" x="10" y="64" width="365" height="67.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,11 +72,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pLL-jA-nAK" secondAttribute="bottom" constant="31" id="EZG-i4-gJZ"/>
                             <constraint firstItem="Wvz-wp-gDv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="8/12" id="GPg-JD-Ahs"/>
                             <constraint firstItem="Wvz-wp-gDv" firstAttribute="top" secondItem="GPw-Bp-JV5" secondAttribute="bottom" id="RuL-RU-2yW"/>
-                            <constraint firstItem="GPw-Bp-JV5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TqG-9w-Mxq"/>
+                            <constraint firstItem="GPw-Bp-JV5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TqG-9w-Mxq"/>
                             <constraint firstItem="GPw-Bp-JV5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VH6-hf-J1m"/>
                             <constraint firstItem="pLL-jA-nAK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cMz-gU-rPN"/>
                             <constraint firstItem="pLL-jA-nAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eXG-CJ-r7X"/>
-                            <constraint firstItem="GPw-Bp-JV5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="j8t-jX-blv"/>
+                            <constraint firstItem="GPw-Bp-JV5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-10" id="j8t-jX-blv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="77.811094452773617"/>
+            <point key="canvasLocation" x="466" y="449"/>
         </scene>
         <!--Key View Controller-->
         <scene sceneID="9pu-l1-kOS">
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-xq-A59">
-                                <rect key="frame" x="10" y="156.5" width="365" height="52.5"/>
+                                <rect key="frame" x="10" y="156" width="365" height="52.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ID-0F-CyT">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="20.5"/>
@@ -120,7 +120,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nD9-Gx-Q6F">
-                                <rect key="frame" x="10" y="275" width="365" height="53"/>
+                                <rect key="frame" x="10" y="274.5" width="365" height="53.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fml-j0-IuT">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="20.5"/>
@@ -129,7 +129,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-gc-yow">
-                                        <rect key="frame" x="0.0" y="22.5" width="365" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="22.5" width="365" height="31"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -157,6 +157,7 @@
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="5mv-6c-YTx" eventType="touchUpInside" id="XZw-ge-mHc"/>
+                                    <segue destination="EyK-ws-nkx" kind="presentation" id="SSY-Up-0nm"/>
                                 </connections>
                             </button>
                         </subviews>

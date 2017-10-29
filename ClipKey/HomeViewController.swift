@@ -10,10 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    //static let sharedInstance = HomeViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "ClipKey"
-        navigationItem.rightBarButtonItem = editButtonItem
+      //  navigationItem.rightBarButtonItem = editButtonItem
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -24,6 +25,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             keys.append(key.value(forKey: "content") as! String)
         }
         
+    }
+    func reloadTable() {
+        keysTable.reloadData()
     }
 
     var titles:[String] = []
