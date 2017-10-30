@@ -32,22 +32,54 @@ class KeyManager {
 
     // Load Data
     func loadData() -> [NSManagedObject] {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let coreDataStack = CoreDataStack()
 
-        context = appDelegate.persistentContainer.viewContext
+        context = coreDataStack.persistentContainer.viewContext
 
         let request: NSFetchRequest<Key> = Key.fetchRequest()
 
         do {
             let results = try context?.fetch(request)
             keysArray = results!
-            print(keysArray)
+            var titles:[String] = []
+            var keys:[String] = []
+
+            for i in 0..<keysArray.count{
+                let key = keysArray[i]
+                let label = key.value(forKey: "label") as! String
+                titles.append(label)
+                let content =  key.value(forKey: "content") as! String
+                keys.append(content)
+            }
+
             return keysArray
         }
         catch {
             fatalError("Error in retrieving pantry list")
         }
     }
+
+    func loadDefaults(){
+
+        getKeys()
+        getTitles()
+
+    }
+    func setKeys(keys:[String]) {
+        userDefaults?.set(keys, forKey: "keys")
+    }
+    func setTitles(titles:[String]) {
+        userDefaults?.set(titles, forKey: "titles")
+    }
+    func getKeys() -> [String] {
+        var keys = (userDefaults?.stringArray(forKey: "keys"))!
+        return keys
+    }
+    func getTitles() -> [String] {
+        var titles = userDefaults?.array(forKey: "titles") as! [String]
+        return titles
+    }
+
 
     func keyAt(index:Int) -> String {
         let key = keysArray[index]

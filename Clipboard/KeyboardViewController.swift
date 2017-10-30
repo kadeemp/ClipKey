@@ -19,13 +19,22 @@ class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITa
     }
     @IBOutlet weak var clipboard: UITableView!
 
+    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     
     }
-    let titles = ["String"]
-    let keys = [""]
+    var titles = ["String"]
+    var keys = [""]
+    override func viewWillAppear(_ animated: Bool) {
+        titles = userDefaults?.array(forKey: "titles") as! [String]
+        print(titles)
+        keys = (userDefaults?.stringArray(forKey: "keys"))!
+        clipboard.reloadData()
+    }
+
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count

@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+let userDefaults = UserDefaults(suiteName: "group.AllFiles")
     //static let sharedInstance = HomeViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +18,21 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        let allKeys = KeyManager.sharedInstance.loadData()
-        for i in 0..<allKeys.count {
-            var key = allKeys[i]
-            titles.append(key.value(forKey: "label") as! String)
-            keys.append(key.value(forKey: "content") as! String)
-        }
-        
+
+        //let allKeys = KeyManager.sharedInstance.loadData()
+        print(titles,keys)
+        titles = (userDefaults?.stringArray(forKey: "titles"))!
+        keys = (userDefaults?.stringArray(forKey: "keys"))!
+        print(titles,keys)
+//        for i in 0..<allKeys.count {
+//            var key = allKeys[i]
+//            titles.append(key.value(forKey: "label") as! String)
+//            keys.append(key.value(forKey: "content") as! String)
+//        }
+        print("~~~~~~~~~~~~~")
+        print("~~~~~~~~~~~~~")
+print(titles,keys)
+
     }
     func reloadTable() {
         keysTable.reloadData()

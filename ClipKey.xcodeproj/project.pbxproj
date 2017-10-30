@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25A31FA680A700B0D15D /* CoreDataStack.swift */; };
 		F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE761FA41746002147BB /* AppDelegate.swift */; };
 		F42DCE791FA41746002147BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE781FA41746002147BB /* HomeViewController.swift */; };
 		F42DCE7C1FA41746002147BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCE7A1FA41746002147BB /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F41B25A31FA680A700B0D15D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F42DCE731FA41746002147BB /* ClipKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42DCE761FA41746002147BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F42DCE781FA41746002147BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
 				F42DCE851FA41746002147BB /* Info.plist */,
 				F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */,
+				F41B25A31FA680A700B0D15D /* CoreDataStack.swift */,
 			);
 			path = ClipKey;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				F42DCEBF1FA46802002147BB /* KeyViewController.swift in Sources */,
 				F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */,
 				F42DCE791FA41746002147BB /* HomeViewController.swift in Sources */,
+				F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */,
 				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
 				F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */,
 			);
