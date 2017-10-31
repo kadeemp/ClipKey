@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class KeyViewController: UIViewController {
 
     var keyLabel:String = ""
     var keyContent:String = ""
     var indexOfKey:Int? = nil
+    var key = NSManagedObject()
     override func viewDidLoad() {
         super.viewDidLoad()
 //        if key != nil {
@@ -27,7 +29,9 @@ class KeyViewController: UIViewController {
 
         //Does not account for if there is only 1 Key
         if indexOfKey != nil {
-            keyLabel  = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
+            key = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
+            print(key)
+            keyLabel  = KeyManager.sharedInstance.keyLabelAt(index: indexOfKey!)
             keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey!)
             labelTextField.text = keyLabel
             contentTextField.text = keyContent
@@ -37,7 +41,17 @@ class KeyViewController: UIViewController {
     @IBOutlet weak var contentTextField: UITextField!
 
     @IBAction func saveButtonPressed(_ sender: Any) {
+        if indexOfKey == nil {
         KeyManager.sharedInstance.addKey(label: labelTextField.text!, content: contentTextField.text!)
+        } else {
+            print("~~~~~~~~~~~")
+            key.setValue(labelTextField.text, forKey: "label")
+            key.setValue(contentTextField.text, forKey: "content")
+            KeyManager.sharedInstance.save()
+            
+            print(key)
+        }
+
        // HomeViewController.sharedInstance.reloadTable()
         navigationController?.popToRootViewController(animated: true)
     }

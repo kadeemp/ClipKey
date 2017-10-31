@@ -80,8 +80,11 @@ class KeyManager {
         return titles
     }
 
-
-    func keyAt(index:Int) -> String {
+    func keyAt(index:Int) -> NSManagedObject {
+        let key = keysArray[index]
+        return key
+    }
+    func keyLabelAt(index:Int) -> String {
         let key = keysArray[index]
         return key.value(forKey: "label") as! String
     }
