@@ -9,43 +9,53 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-let userDefaults = UserDefaults(suiteName: "group.AllFiles")
-    //static let sharedInstance = HomeViewController()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "ClipKey"
-      //  navigationItem.rightBarButtonItem = editButtonItem
-    }
+    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
 
-    override func viewWillAppear(_ animated: Bool) {
-
-        let allKeys = KeyManager.sharedInstance.loadData()
-
-        for i in 0..<allKeys.count {
-            var key = allKeys[i]
-            titles.append(key.value(forKey: "label") as! String)
-            keys.append(key.value(forKey: "content") as! String)
-        }
-
-
-    }
-    func reloadTable() {
-        keysTable.reloadData()
-    }
+    //MARK:- Variable Declaration
 
     var titles:[String] = []
     var keys:[String] = []
 
-//    var titles = ["First", "Last", "Full Name", "Address", "City", "Zip Code"]
-//    var keys = ["Kadeem", "Palacios", "Kadeem Palacios", "2443 Fitzpatrick st.", "San Pablo, Ca", "94806"]
+    //MARK:- IB Outlets
+
+    @IBOutlet weak var newKeyButtonPressed: UIButton!
+    @IBOutlet weak var keysTable: UITableView!
+
+    //MARK:- IB Actions
 
     @IBAction func newKeyButtonPressed(_ sender: Any) {
         if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
             navigationController?.pushViewController(newKeyView, animated: true)
         }
     }
-    @IBOutlet weak var newKeyButtonPressed: UIButton!
-    @IBOutlet weak var keysTable: UITableView!
+
+    //MARK:- View Intitialization
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "ClipKey"
+
+        //  navigationItem.rightBarButtonItem = editButtonItem
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+
+        let allKeys = KeyManager.sharedInstance.loadData()
+        print(allKeys)
+        print("~~~~~~~~~~~~~~~~~`")
+        print("~~~~~~~~~~~~~~~~~`")
+        titles = []
+        keys = []
+        for i in 0..<allKeys.count {
+            var key = allKeys[i]
+            titles.append(key.value(forKey: "label") as! String)
+            keys.append(key.value(forKey: "content") as! String)
+        }
+        KeyManager.sharedInstance.setKeys(keys: keys)
+        KeyManager.sharedInstance.setTitles(titles: titles)
+    }
+
+    //MARK:- TableView Management
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
@@ -57,20 +67,22 @@ let userDefaults = UserDefaults(suiteName: "group.AllFiles")
         return cell!
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-
-
         if editingStyle == .delete {
+            print(titles)
+
             titles.remove(at: indexPath.row)
-            KeyManager.sharedInstance.remove(index: indexPath.row)
             keysTable.deleteRows(at: [indexPath] , with: .fade)
+            KeyManager.sharedInstance.remove(index: indexPath.row)
+            print(titles)
+
+            
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
-//            navigationController?.pushViewController(newKeyView, animated: true)
         performSegue(withIdentifier: "viewKey", sender: self)
-      //  }
     }
+
+    //MARK:- Navigation preparation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let allKeys = KeyManager.sharedInstance.loadData()

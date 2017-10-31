@@ -10,7 +10,7 @@ import CoreData
 
 class CoreDataStack{
 
-
+// MARK: - Core Data container setup
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation

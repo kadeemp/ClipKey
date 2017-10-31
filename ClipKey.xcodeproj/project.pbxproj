@@ -19,7 +19,6 @@
 		F42DCEAE1FA417C8002147BB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */; };
 		F42DCEB21FA417C8002147BB /* Clipboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F42DCEAB1FA417C8002147BB /* Clipboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEB71FA417DD002147BB /* Clipboard.storyboard */; };
-		F42DCEBB1FA41BE4002147BB /* ClipBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */; };
 		F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBC1FA44D14002147BB /* KeyManager.swift */; };
 		F42DCEBF1FA46802002147BB /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBE1FA46802002147BB /* KeyViewController.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 		F42DCEAF1FA417C8002147BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42DCEB71FA417DD002147BB /* Clipboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clipboard.storyboard; sourceTree = "<group>"; };
 		F42DCEB91FA419BC002147BB /* Clipboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipboard.entitlements; sourceTree = "<group>"; };
-		F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClipBoard.xib; sourceTree = "<group>"; };
 		F42DCEBC1FA44D14002147BB /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
 		F42DCEBE1FA46802002147BB /* KeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyViewController.swift; sourceTree = "<group>"; };
 		F42DCEC21FA57805002147BB /* ClipKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipKey.entitlements; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
 				F42DCEAF1FA417C8002147BB /* Info.plist */,
 				F42DCEB71FA417DD002147BB /* Clipboard.storyboard */,
-				F42DCEBA1FA41BE4002147BB /* ClipBoard.xib */,
 			);
 			path = Clipboard;
 			sourceTree = "<group>";
@@ -356,7 +353,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42DCEBB1FA41BE4002147BB /* ClipBoard.xib in Resources */,
 				F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

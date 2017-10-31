@@ -10,31 +10,51 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet var nextKeyboardButton: UIButton!
-    
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-        
-        // Add custom view sizing constraints here
-    }
-    @IBOutlet weak var clipboard: UITableView!
+    //MARK:- Variable Declaration
 
-    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    
-    }
     var titles = ["String"]
     var keys = [""]
+    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
+
+    //MARK:- IB Outlets
+
+    @IBOutlet var nextKeyboardButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var clipboard: UITableView!
+
+    //MARK:- View Intitialization
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         titles = userDefaults?.array(forKey: "titles") as! [String]
         print(titles)
         keys = (userDefaults?.stringArray(forKey: "keys"))!
         clipboard.reloadData()
     }
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
 
+        // Add custom view sizing constraints here
+    }
+    
+    //MARK:- IB Actions
+
+    @IBAction func refreshButtonPressed(_ sender: Any) {
+        clipboard.reloadData()
+    }
+
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        let proxy = textDocumentProxy
+        proxy.deleteBackward()
+    }
+    @IBAction func nextKeyboardButtonPressed(_ sender: Any) {
+        advanceToNextInputMode()
+    }
+
+    //MARK:- TableView Management
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
@@ -46,7 +66,7 @@ class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITa
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let text = keys[indexPath.row]
+        let text = keys[indexPath.row] + " "
         let proxy = textDocumentProxy
         proxy.insertText(text)
     }

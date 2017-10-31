@@ -93,7 +93,6 @@ class KeyManager {
         return key.value(forKey: "content") as! String
     }
 
-    // Add a new key
     func addKey(label: String, content:String?) {
         print(#line)
         print(#function)
@@ -131,7 +130,7 @@ class KeyManager {
 
         let item = keysArray.remove(at: index)
 
-        // TODO: Remove from Core Data!
+
         context?.delete(item)
         save()
     }
@@ -139,7 +138,7 @@ class KeyManager {
     /// Clear all keys
     func clear() {
         keysArray = []
-        // TODO: Remove all items from Core Data
+        
         save()
     }
 

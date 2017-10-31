@@ -11,58 +11,64 @@ import CoreData
 
 class KeyViewController: UIViewController {
 
+    //MARK:- Variable Declaration
+
     var keyLabel:String = ""
     var keyContent:String = ""
     var indexOfKey:Int? = nil
     var key = NSManagedObject()
+
+    //MARK:- View Intitialization
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if key != nil {
-//            print(key)
-//        }
-        // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
-
-     
-
-        //Does not account for if there is only 1 Key
+        
         if indexOfKey != nil {
             key = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
-            print(key)
             keyLabel  = KeyManager.sharedInstance.keyLabelAt(index: indexOfKey!)
             keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey!)
             labelTextField.text = keyLabel
             contentTextField.text = keyContent
         }
     }
+
+    //MARK:- IB Outlets
+
     @IBOutlet weak var labelTextField: UITextField!
     @IBOutlet weak var contentTextField: UITextField!
 
-    @IBAction func saveButtonPressed(_ sender: Any) {
-        if indexOfKey == nil {
-        KeyManager.sharedInstance.addKey(label: labelTextField.text!, content: contentTextField.text!)
-        } else {
-            print("~~~~~~~~~~~")
-            key.setValue(labelTextField.text, forKey: "label")
-            key.setValue(contentTextField.text, forKey: "content")
-            KeyManager.sharedInstance.save()
-            
-            print(key)
-        }
-
-       // HomeViewController.sharedInstance.reloadTable()
+    //MARK:- IB Actions
+    
+    @IBAction func cancelButtonPressed(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
-    /*
-    // MARK: - Navigation
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        if labelTextField.hasText && contentTextField.hasText {
+            if indexOfKey == nil {
+                KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
+            } else {
+                key.setValue(labelTextField.text, forKey: "label")
+                key.setValue(contentTextField.text, forKey: "content")
+                KeyManager.sharedInstance.save()
+            }
+        }
+        if labelTextField.hasText && !(contentTextField.hasText) {
+            contentTextField.text = labelTextField.text
+            if indexOfKey == nil {
+                KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
+            } else {
+                key.setValue(labelTextField.text, forKey: "label")
+                key.setValue(contentTextField.text, forKey: "content")
+                KeyManager.sharedInstance.save()
+            }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        }
+
+        navigationController?.popToRootViewController(animated: true)
     }
-    */
+
 
 }
