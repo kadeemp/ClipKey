@@ -8,8 +8,10 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
+
+    let constants = Constants()
 
     //MARK:- Variable Declaration
 
@@ -24,7 +26,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //MARK:- IB Actions
 
     @IBAction func newKeyButtonPressed(_ sender: Any) {
-        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: "keyViewController") {
+        if let newKeyView = storyboard?.instantiateViewController(withIdentifier: constants.keyVCIdentifier) {
             navigationController?.pushViewController(newKeyView, animated: true)
         }
     }
@@ -33,8 +35,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "ClipKey"
-
+        self.title = constants.title
+        
         //  navigationItem.rightBarButtonItem = editButtonItem
     }
 
@@ -48,8 +50,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         keys = []
         for i in 0..<allKeys.count {
             var key = allKeys[i]
-            titles.append(key.value(forKey: "label") as! String)
-            keys.append(key.value(forKey: "content") as! String)
+            titles.append(key.value(forKey: constants.label) as! String)
+            keys.append(key.value(forKey: constants.content) as! String)
         }
         KeyManager.sharedInstance.setKeys(keys: keys)
         KeyManager.sharedInstance.setTitles(titles: titles)
@@ -62,7 +64,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = keysTable.dequeueReusableCell(withIdentifier: "cell")
+        let cell = keysTable.dequeueReusableCell(withIdentifier:constants.defaultCellIdentifier)
         cell?.textLabel?.text = titles[indexPath.row]
         return cell!
     }
@@ -79,14 +81,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "viewKey", sender: self)
+        performSegue(withIdentifier:constants.viewKeySegueIdentifier, sender: self)
     }
 
     //MARK:- Navigation preparation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let allKeys = KeyManager.sharedInstance.loadData()
-        if segue.identifier == "viewKey" {
+        if segue.identifier == constants.viewKeySegueIdentifier {
             if let indexPath = keysTable.indexPathForSelectedRow {
                 let destVC = segue.destination as! KeyViewController
                 destVC.indexOfKey = indexPath.row

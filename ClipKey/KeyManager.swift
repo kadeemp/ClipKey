@@ -13,9 +13,10 @@ class KeyManager {
 
     // MARK: - Vars
     static let sharedInstance = KeyManager()
+    let constants = Constants()
     var keysArray = [NSManagedObject]()
     var context: NSManagedObjectContext?
-    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
+
 
     var count:Int {
         get {
@@ -46,9 +47,9 @@ class KeyManager {
 
             for i in 0..<keysArray.count{
                 let key = keysArray[i]
-                let label = key.value(forKey: "label") as! String
+                let label = key.value(forKey: constants.label) as! String
                 titles.append(label)
-                let content =  key.value(forKey: "content") as! String
+                let content =  key.value(forKey: constants.content) as! String
                 keys.append(content)
             }
 
@@ -66,17 +67,17 @@ class KeyManager {
 
     }
     func setKeys(keys:[String]) {
-        userDefaults?.set(keys, forKey: "keys")
+        constants.userDefaults?.set(keys, forKey: "keys")
     }
     func setTitles(titles:[String]) {
-        userDefaults?.set(titles, forKey: "titles")
+        constants.userDefaults?.set(titles, forKey: "titles")
     }
     func getKeys() -> [String] {
-        var keys = (userDefaults?.stringArray(forKey: "keys"))!
+        var keys = (constants.userDefaults?.stringArray(forKey: "keys"))!
         return keys
     }
     func getTitles() -> [String] {
-        var titles = userDefaults?.array(forKey: "titles") as! [String]
+        var titles = constants.userDefaults?.array(forKey: "titles") as! [String]
         return titles
     }
 

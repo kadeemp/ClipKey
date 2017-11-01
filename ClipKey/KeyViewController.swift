@@ -22,6 +22,7 @@ class KeyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelTextField.becomeFirstResponder()
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25A31FA680A700B0D15D /* CoreDataStack.swift */; };
+		F41B25E11FA93E8700B0D15D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25DE1FA93E7900B0D15D /* Constants.swift */; };
+		F41B25E31FA95BFA00B0D15D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25E21FA95BFA00B0D15D /* Constants.swift */; };
 		F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE761FA41746002147BB /* AppDelegate.swift */; };
 		F42DCE791FA41746002147BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCE781FA41746002147BB /* HomeViewController.swift */; };
 		F42DCE7C1FA41746002147BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCE7A1FA41746002147BB /* Main.storyboard */; };
@@ -48,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F41B25B61FA933A100B0D15D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F42DCEB61FA417C8002147BB /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +75,8 @@
 
 /* Begin PBXFileReference section */
 		F41B25A31FA680A700B0D15D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F41B25DE1FA93E7900B0D15D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F41B25E21FA95BFA00B0D15D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F42DCE731FA41746002147BB /* ClipKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42DCE761FA41746002147BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F42DCE781FA41746002147BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +133,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41B25B71FA933AA00B0D15D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F42DCE6A1FA41746002147BB = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +148,7 @@
 				F42DCE981FA41747002147BB /* ClipKeyUITests */,
 				F42DCEAC1FA417C8002147BB /* Clipboard */,
 				F42DCE741FA41746002147BB /* Products */,
+				F41B25B71FA933AA00B0D15D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +166,7 @@
 		F42DCE751FA41746002147BB /* ClipKey */ = {
 			isa = PBXGroup;
 			children = (
+				F41B25DE1FA93E7900B0D15D /* Constants.swift */,
 				F42DCEC21FA57805002147BB /* ClipKey.entitlements */,
 				F42DCE761FA41746002147BB /* AppDelegate.swift */,
 				F42DCE781FA41746002147BB /* HomeViewController.swift */,
@@ -184,6 +207,7 @@
 				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
 				F42DCEAF1FA417C8002147BB /* Info.plist */,
 				F42DCEB71FA417DD002147BB /* Clipboard.storyboard */,
+				F41B25E21FA95BFA00B0D15D /* Constants.swift */,
 			);
 			path = Clipboard;
 			sourceTree = "<group>";
@@ -199,6 +223,7 @@
 				F42DCE701FA41746002147BB /* Frameworks */,
 				F42DCE711FA41746002147BB /* Resources */,
 				F42DCEB61FA417C8002147BB /* Embed App Extensions */,
+				F41B25B61FA933A100B0D15D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,6 +393,7 @@
 				F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */,
 				F42DCE791FA41746002147BB /* HomeViewController.swift in Sources */,
 				F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */,
+				F41B25E11FA93E8700B0D15D /* Constants.swift in Sources */,
 				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
 				F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */,
 			);
@@ -394,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42DCEAE1FA417C8002147BB /* KeyboardViewController.swift in Sources */,
+				F41B25E31FA95BFA00B0D15D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +579,10 @@
 				CODE_SIGN_ENTITLEMENTS = ClipKey/ClipKey.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ClipKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey;
@@ -569,6 +600,10 @@
 				CODE_SIGN_ENTITLEMENTS = ClipKey/ClipKey.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ClipKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey;

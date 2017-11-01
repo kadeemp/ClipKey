@@ -11,10 +11,11 @@ import UIKit
 class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITableViewDelegate {
 
     //MARK:- Variable Declaration
+    
 
     var titles = ["String"]
     var keys = [""]
-    let userDefaults = UserDefaults(suiteName: "group.AllFiles")
+    let constants = Constants()
 
     //MARK:- IB Outlets
 
@@ -26,12 +27,13 @@ class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITa
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        titles = userDefaults?.array(forKey: "titles") as! [String]
+        titles = constants.userDefaults?.array(forKey: constants.titlesKey) as! [String]
         print(titles)
-        keys = (userDefaults?.stringArray(forKey: "keys"))!
+        keys = (constants.userDefaults?.stringArray(forKey: constants.keysKey))!
         clipboard.reloadData()
     }
     override func updateViewConstraints() {
@@ -61,7 +63,7 @@ class KeyboardViewController: UIInputViewController, UITableViewDataSource, UITa
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = clipboard.dequeueReusableCell(withIdentifier: "cell")
+        let cell = clipboard.dequeueReusableCell(withIdentifier: constants.defaultCellIdentifier)
         cell?.textLabel?.text = titles[indexPath.row]
         return cell!
     }
