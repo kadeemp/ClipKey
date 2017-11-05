@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298F64E51087970BF5E5E206 /* Pods_Clipboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDA1007894F19AA6723D0A3 /* Pods_Clipboard.framework */; };
 		62A99DDC135FB90B8019B515 /* Pods_ClipKeyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22254683B29C77FBDD5881B6 /* Pods_ClipKeyTests.framework */; };
 		AB15ADA552C8A9283AECFAE6 /* Pods_ClipKeyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DD37E24CCDD3A1D04B5FF3 /* Pods_ClipKeyUITests.framework */; };
 		F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25A31FA680A700B0D15D /* CoreDataStack.swift */; };
@@ -27,6 +28,7 @@
 		F42DCEBF1FA46802002147BB /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBE1FA46802002147BB /* KeyViewController.swift */; };
 		F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7121FAEF7E60090AE57 /* CustomButton.swift */; };
 		F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */; };
+		F70C23E1C3F4A89E39538B6A /* Pods_ClipKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E17FD32EFFAFC56FCD60D1D /* Pods_ClipKey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70C23E1C3F4A89E39538B6A /* Pods_ClipKey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298F64E51087970BF5E5E206 /* Pods_Clipboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

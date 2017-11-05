@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4B047BB5ECC5BB30053F0833228A38 /* Pods-ClipKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 203A00D87E346EF4883E835F275E3981 /* Pods-ClipKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E97A13657A05F4C7138F61AC9D5D3D3 /* Pods-Clipboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 378ED046CC66BD70478284F2903DE8DA /* Pods-Clipboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A46821E9344B296C009A7875144652C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		44E977DBECEF8DAA902EF87DEB21C8BA /* Pods-ClipKeyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2283A128E62143F40EB206EE699F2187 /* Pods-ClipKeyTests-dummy.m */; };
+		7C0B7E96C973FECDC6F6A0BC449752A6 /* Pods-ClipKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F7D998474FFE1EE75867B1F523CD /* Pods-ClipKey-dummy.m */; };
+		9C211319F0B1573FB8C03C0EEBFB13D1 /* Pods-ClipKeyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A726858D697BCACC0960E1AA22929F1E /* Pods-ClipKeyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CD88B5B3BCC0BC23F66F75611DE39CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AF1A903A92DF6FC7ACB48E7B04D79F28 /* Pods-ClipKeyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F8F804D290379C33583B87B0E3FBEDC /* Pods-ClipKeyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7DC845AFA8E9F78083FD0EED4C3E90A /* Pods-ClipKeyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F101CB7313482555B2074565B5E385B /* Pods-ClipKeyUITests-dummy.m */; };
+		E88BBA8700E46D2652181CA7C2DE3C29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F38CF15962A014D8C69E31D550274A6A /* Pods-Clipboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FC4F0FC004C8E15AD96A9826020FCD /* Pods-Clipboard-dummy.m */; };
+		FB91AD31EEACE9829F0C94CCEA785AB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02C5F7D998474FFE1EE75867B1F523CD /* Pods-ClipKey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClipKey-dummy.m"; sourceTree = "<group>"; };
+		07365B8A510682D678BC07A3C29E7455 /* Pods-ClipKey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ClipKey.modulemap"; sourceTree = "<group>"; };
+		0F101CB7313482555B2074565B5E385B /* Pods-ClipKeyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClipKeyUITests-dummy.m"; sourceTree = "<group>"; };
+		1B5FB259B29DD7366CDCF47857D37507 /* Pods_Clipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clipboard.framework; path = "Pods-Clipboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		203A00D87E346EF4883E835F275E3981 /* Pods-ClipKey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClipKey-umbrella.h"; sourceTree = "<group>"; };
+		2283A128E62143F40EB206EE699F2187 /* Pods-ClipKeyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClipKeyTests-dummy.m"; sourceTree = "<group>"; };
+		267B26FA4F64F40EC2A9930F9FC9EE11 /* Pods-Clipboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clipboard-resources.sh"; sourceTree = "<group>"; };
+		2BF3F8A8288DEED1B0978956EC547E68 /* Pods_ClipKeyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKeyTests.framework; path = "Pods-ClipKeyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36ACF53DF4CE5B4FB21E4EB6EBC0AD1C /* Pods-Clipboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clipboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		378ED046CC66BD70478284F2903DE8DA /* Pods-Clipboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clipboard-umbrella.h"; sourceTree = "<group>"; };
+		37950C798E2624C65DF996BEC3EDB59C /* Pods-ClipKeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55F729CB99AA8DDAEDF9E4079FAAB1CC /* Pods-ClipKeyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ClipKeyUITests.modulemap"; sourceTree = "<group>"; };
+		5A220DE366745867391FDCB134ADED90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8F804D290379C33583B87B0E3FBEDC /* Pods-ClipKeyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClipKeyTests-umbrella.h"; sourceTree = "<group>"; };
+		6165039DDE39388BBC0CDC609E2336DE /* Pods-ClipKey-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKey-resources.sh"; sourceTree = "<group>"; };
+		65DF03EB35512E6443F2F26A00BE40FA /* Pods_ClipKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKey.framework; path = "Pods-ClipKey.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		808C49C508966CAE2B189742A07D69E8 /* Pods-ClipKeyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClipKeyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8341B6E3E5C45780D43BE93927BEBA7E /* Pods_ClipKeyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKeyUITests.framework; path = "Pods-ClipKeyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E3EDB5BA0D311B4AEDEE2178388125 /* Pods-Clipboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Clipboard.modulemap"; sourceTree = "<group>"; };
+		87FC4F0FC004C8E15AD96A9826020FCD /* Pods-Clipboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clipboard-dummy.m"; sourceTree = "<group>"; };
+		8DA09431D107EC60020D93D742D7F2F9 /* Pods-ClipKey-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClipKey-acknowledgements.plist"; sourceTree = "<group>"; };
+		9265AD1EA865F61A957D9EDF384DE333 /* Pods-ClipKeyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyUITests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C00BB6B2AC24F7ADC929CAE5F1CF97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F1E666B0953C2820CF05C7A418F6AA /* Pods-ClipKeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyTests.release.xcconfig"; sourceTree = "<group>"; };
+		A726858D697BCACC0960E1AA22929F1E /* Pods-ClipKeyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClipKeyUITests-umbrella.h"; sourceTree = "<group>"; };
+		A78DAE5D7874921E685DBEC993A6ED7C /* Pods-Clipboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipboard.debug.xcconfig"; sourceTree = "<group>"; };
+		BA55F4E1AFE300D0929932BF4FDDCFE4 /* Pods-ClipKeyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyTests-frameworks.sh"; sourceTree = "<group>"; };
+		BE3B88642E4BE58A7E7641CD52A85F16 /* Pods-Clipboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipboard.release.xcconfig"; sourceTree = "<group>"; };
+		BE98F9A82BCD15DC79F01F0C7D3ACDD9 /* Pods-ClipKey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKey.release.xcconfig"; sourceTree = "<group>"; };
+		CBB7DC96C28B5CC8D5C3F230C587D7FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1C5A7336FD0B5E1E382A0F91582009 /* Pods-ClipKeyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ClipKeyTests.modulemap"; sourceTree = "<group>"; };
+		D1228AF6CABFB315B37BF2DDE13251A2 /* Pods-Clipboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clipboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		D13BD865CFFA3D389BC27F01BAAF9026 /* Pods-ClipKey-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKey-frameworks.sh"; sourceTree = "<group>"; };
+		D56FAA32F1950EC78C2EA75AD2FCB5AA /* Pods-ClipKeyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClipKeyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA8D483344385BA84AA135C543529E38 /* Pods-ClipKey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKey.debug.xcconfig"; sourceTree = "<group>"; };
+		DDD0257B35A0161C8CE2E970C2322E92 /* Pods-ClipKeyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyTests-resources.sh"; sourceTree = "<group>"; };
+		E3CC0BBBD54095117A5CE10848BF49EE /* Pods-ClipKeyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClipKeyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5AC5BD5A568109780D9F9C0873E9923 /* Pods-ClipKey-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClipKey-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E7FE0A95DE3F629A9CD878CEB580F7A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA96A257CD76373271BD4586DD1F0FB7 /* Pods-ClipKeyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5607353171C97BCA9738E16DED30BA0 /* Pods-ClipKeyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8CF49AB482CB534394630F5A9D872B8 /* Pods-ClipKeyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FB441561AC25F4C64C7B2392EF9AE289 /* Pods-ClipKeyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClipKeyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F57AC3740A313F46C6D5B2B11F2B843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A46821E9344B296C009A7875144652C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246F44F5F18EC53A66478411065D82A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD88B5B3BCC0BC23F66F75611DE39CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4308BC7CFE358D5863DD25320CF84208 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB91AD31EEACE9829F0C94CCEA785AB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D1937125F7EF825CED174748BC230B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88BBA8700E46D2652181CA7C2DE3C29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CDC0DC7E2210B34463D9DE3BCC047400 /* Products */,
+				CFA4AE63D43B1DE394D93CEB1277CAB5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A7C7916544372A20A01828AA98511693 /* Pods-ClipKey */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7DC96C28B5CC8D5C3F230C587D7FC /* Info.plist */,
+				07365B8A510682D678BC07A3C29E7455 /* Pods-ClipKey.modulemap */,
+				E5AC5BD5A568109780D9F9C0873E9923 /* Pods-ClipKey-acknowledgements.markdown */,
+				8DA09431D107EC60020D93D742D7F2F9 /* Pods-ClipKey-acknowledgements.plist */,
+				02C5F7D998474FFE1EE75867B1F523CD /* Pods-ClipKey-dummy.m */,
+				D13BD865CFFA3D389BC27F01BAAF9026 /* Pods-ClipKey-frameworks.sh */,
+				6165039DDE39388BBC0CDC609E2336DE /* Pods-ClipKey-resources.sh */,
+				203A00D87E346EF4883E835F275E3981 /* Pods-ClipKey-umbrella.h */,
+				DA8D483344385BA84AA135C543529E38 /* Pods-ClipKey.debug.xcconfig */,
+				BE98F9A82BCD15DC79F01F0C7D3ACDD9 /* Pods-ClipKey.release.xcconfig */,
+			);
+			name = "Pods-ClipKey";
+			path = "Target Support Files/Pods-ClipKey";
+			sourceTree = "<group>";
+		};
+		ADC6B7C09BF44CA97A7F1A4D8A4A38B3 /* Pods-Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				96C00BB6B2AC24F7ADC929CAE5F1CF97 /* Info.plist */,
+				86E3EDB5BA0D311B4AEDEE2178388125 /* Pods-Clipboard.modulemap */,
+				36ACF53DF4CE5B4FB21E4EB6EBC0AD1C /* Pods-Clipboard-acknowledgements.markdown */,
+				D1228AF6CABFB315B37BF2DDE13251A2 /* Pods-Clipboard-acknowledgements.plist */,
+				87FC4F0FC004C8E15AD96A9826020FCD /* Pods-Clipboard-dummy.m */,
+				267B26FA4F64F40EC2A9930F9FC9EE11 /* Pods-Clipboard-resources.sh */,
+				378ED046CC66BD70478284F2903DE8DA /* Pods-Clipboard-umbrella.h */,
+				A78DAE5D7874921E685DBEC993A6ED7C /* Pods-Clipboard.debug.xcconfig */,
+				BE3B88642E4BE58A7E7641CD52A85F16 /* Pods-Clipboard.release.xcconfig */,
+			);
+			name = "Pods-Clipboard";
+			path = "Target Support Files/Pods-Clipboard";
+			sourceTree = "<group>";
+		};
+		B3C8A0F33AC0B2E199ECE43856C4D373 /* Pods-ClipKeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A220DE366745867391FDCB134ADED90 /* Info.plist */,
+				55F729CB99AA8DDAEDF9E4079FAAB1CC /* Pods-ClipKeyUITests.modulemap */,
+				FB441561AC25F4C64C7B2392EF9AE289 /* Pods-ClipKeyUITests-acknowledgements.markdown */,
+				808C49C508966CAE2B189742A07D69E8 /* Pods-ClipKeyUITests-acknowledgements.plist */,
+				0F101CB7313482555B2074565B5E385B /* Pods-ClipKeyUITests-dummy.m */,
+				F8CF49AB482CB534394630F5A9D872B8 /* Pods-ClipKeyUITests-frameworks.sh */,
+				9265AD1EA865F61A957D9EDF384DE333 /* Pods-ClipKeyUITests-resources.sh */,
+				A726858D697BCACC0960E1AA22929F1E /* Pods-ClipKeyUITests-umbrella.h */,
+				EA96A257CD76373271BD4586DD1F0FB7 /* Pods-ClipKeyUITests.debug.xcconfig */,
+				F5607353171C97BCA9738E16DED30BA0 /* Pods-ClipKeyUITests.release.xcconfig */,
+			);
+			name = "Pods-ClipKeyUITests";
+			path = "Target Support Files/Pods-ClipKeyUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDC0DC7E2210B34463D9DE3BCC047400 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B5FB259B29DD7366CDCF47857D37507 /* Pods_Clipboard.framework */,
+				65DF03EB35512E6443F2F26A00BE40FA /* Pods_ClipKey.framework */,
+				2BF3F8A8288DEED1B0978956EC547E68 /* Pods_ClipKeyTests.framework */,
+				8341B6E3E5C45780D43BE93927BEBA7E /* Pods_ClipKeyUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFA4AE63D43B1DE394D93CEB1277CAB5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADC6B7C09BF44CA97A7F1A4D8A4A38B3 /* Pods-Clipboard */,
+				A7C7916544372A20A01828AA98511693 /* Pods-ClipKey */,
+				D305DF07BF6198601C9E1AACB46F5B47 /* Pods-ClipKeyTests */,
+				B3C8A0F33AC0B2E199ECE43856C4D373 /* Pods-ClipKeyUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D305DF07BF6198601C9E1AACB46F5B47 /* Pods-ClipKeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7FE0A95DE3F629A9CD878CEB580F7A0 /* Info.plist */,
+				CC1C5A7336FD0B5E1E382A0F91582009 /* Pods-ClipKeyTests.modulemap */,
+				E3CC0BBBD54095117A5CE10848BF49EE /* Pods-ClipKeyTests-acknowledgements.markdown */,
+				D56FAA32F1950EC78C2EA75AD2FCB5AA /* Pods-ClipKeyTests-acknowledgements.plist */,
+				2283A128E62143F40EB206EE699F2187 /* Pods-ClipKeyTests-dummy.m */,
+				BA55F4E1AFE300D0929932BF4FDDCFE4 /* Pods-ClipKeyTests-frameworks.sh */,
+				DDD0257B35A0161C8CE2E970C2322E92 /* Pods-ClipKeyTests-resources.sh */,
+				5F8F804D290379C33583B87B0E3FBEDC /* Pods-ClipKeyTests-umbrella.h */,
+				37950C798E2624C65DF996BEC3EDB59C /* Pods-ClipKeyTests.debug.xcconfig */,
+				A2F1E666B0953C2820CF05C7A418F6AA /* Pods-ClipKeyTests.release.xcconfig */,
+			);
+			name = "Pods-ClipKeyTests";
+			path = "Target Support Files/Pods-ClipKeyTests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05DED3332EF90A5CEBAAA8982BFF0708 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1A903A92DF6FC7ACB48E7B04D79F28 /* Pods-ClipKeyTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320CAC6B64B6C6D6925430B61077615C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C211319F0B1573FB8C03C0EEBFB13D1 /* Pods-ClipKeyUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D49A7673E2D2B9CE70C42A56A8782E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E97A13657A05F4C7138F61AC9D5D3D3 /* Pods-Clipboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED854F5F5B71B1330E8D815134B9C8F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4B047BB5ECC5BB30053F0833228A38 /* Pods-ClipKey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B3298CF15EB488F1D49BA395FD074CE /* Pods-ClipKeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3558E7706EFBB44C21CAB79D5E834AAB /* Build configuration list for PBXNativeTarget "Pods-ClipKeyUITests" */;
+			buildPhases = (
+				0111118FF89C855AB55D1F4A72511D9A /* Sources */,
+				4308BC7CFE358D5863DD25320CF84208 /* Frameworks */,
+				320CAC6B64B6C6D6925430B61077615C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ClipKeyUITests";
+			productName = "Pods-ClipKeyUITests";
+			productReference = 8341B6E3E5C45780D43BE93927BEBA7E /* Pods_ClipKeyUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E557F410FE2FCFE68504A40FBBC08C1 /* Pods-ClipKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8906ECC852BBD4CB7E9F97E99B133D /* Build configuration list for PBXNativeTarget "Pods-ClipKey" */;
+			buildPhases = (
+				3BE4E9948A9F9BF9CA40C991024C578D /* Sources */,
+				246F44F5F18EC53A66478411065D82A8 /* Frameworks */,
+				ED854F5F5B71B1330E8D815134B9C8F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ClipKey";
+			productName = "Pods-ClipKey";
+			productReference = 65DF03EB35512E6443F2F26A00BE40FA /* Pods_ClipKey.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0EC78E719AE21EF6583CDB54BE9E0FB /* Pods-Clipboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85382B415AD11AC1019A4F370B5F3BB7 /* Build configuration list for PBXNativeTarget "Pods-Clipboard" */;
+			buildPhases = (
+				6F66DE71E070476C25DDA3662410EFB1 /* Sources */,
+				B4D1937125F7EF825CED174748BC230B /* Frameworks */,
+				A2D49A7673E2D2B9CE70C42A56A8782E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Clipboard";
+			productName = "Pods-Clipboard";
+			productReference = 1B5FB259B29DD7366CDCF47857D37507 /* Pods_Clipboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5A8D9F109B0F6A3770CE0B2F59843AF /* Pods-ClipKeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FE8AAD1233F1860F5254009DD38C76 /* Build configuration list for PBXNativeTarget "Pods-ClipKeyTests" */;
+			buildPhases = (
+				4CD272150A51E56B297CEBC726F88DFD /* Sources */,
+				0F57AC3740A313F46C6D5B2B11F2B843 /* Frameworks */,
+				05DED3332EF90A5CEBAAA8982BFF0708 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ClipKeyTests";
+			productName = "Pods-ClipKeyTests";
+			productReference = 2BF3F8A8288DEED1B0978956EC547E68 /* Pods_ClipKeyTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CDC0DC7E2210B34463D9DE3BCC047400 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0EC78E719AE21EF6583CDB54BE9E0FB /* Pods-Clipboard */,
+				5E557F410FE2FCFE68504A40FBBC08C1 /* Pods-ClipKey */,
+				F5A8D9F109B0F6A3770CE0B2F59843AF /* Pods-ClipKeyTests */,
+				1B3298CF15EB488F1D49BA395FD074CE /* Pods-ClipKeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0111118FF89C855AB55D1F4A72511D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DC845AFA8E9F78083FD0EED4C3E90A /* Pods-ClipKeyUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE4E9948A9F9BF9CA40C991024C578D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C0B7E96C973FECDC6F6A0BC449752A6 /* Pods-ClipKey-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD272150A51E56B297CEBC726F88DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E977DBECEF8DAA902EF87DEB21C8BA /* Pods-ClipKeyTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F66DE71E070476C25DDA3662410EFB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38CF15962A014D8C69E31D550274A6A /* Pods-Clipboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C4B3AC3202214F8958E0B8C3CD31D3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F1E666B0953C2820CF05C7A418F6AA /* Pods-ClipKeyTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKeyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKeyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D10302CDD0F3887627D871121A10D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3B88642E4BE58A7E7641CD52A85F16 /* Pods-Clipboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clipboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clipboard/Pods-Clipboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Clipboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3567CEB56E26ED81ECA14C565B49623B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8D483344385BA84AA135C543529E38 /* Pods-ClipKey.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKey/Pods-ClipKey.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKey;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4648FE9392D58775632F4090A4904FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78DAE5D7874921E685DBEC993A6ED7C /* Pods-Clipboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clipboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clipboard/Pods-Clipboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Clipboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B09FF8F6464D541C95164130AEF4ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37950C798E2624C65DF996BEC3EDB59C /* Pods-ClipKeyTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKeyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKeyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D144F724433A09597E3476A57631255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		923ECFF71D9011C3D62CD356F789373E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA96A257CD76373271BD4586DD1F0FB7 /* Pods-ClipKeyUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKeyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKeyUITests/Pods-ClipKeyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKeyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8427BB3A8AEF58036BC18191765D52C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5607353171C97BCA9738E16DED30BA0 /* Pods-ClipKeyUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKeyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKeyUITests/Pods-ClipKeyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKeyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E268586263CD77C5A84609AA9942EB2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE98F9A82BCD15DC79F01F0C7D3ACDD9 /* Pods-ClipKey.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKey/Pods-ClipKey.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKey;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D144F724433A09597E3476A57631255 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3558E7706EFBB44C21CAB79D5E834AAB /* Build configuration list for PBXNativeTarget "Pods-ClipKeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923ECFF71D9011C3D62CD356F789373E /* Debug */,
+				B8427BB3A8AEF58036BC18191765D52C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FE8AAD1233F1860F5254009DD38C76 /* Build configuration list for PBXNativeTarget "Pods-ClipKeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B09FF8F6464D541C95164130AEF4ACD /* Debug */,
+				0C4B3AC3202214F8958E0B8C3CD31D3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85382B415AD11AC1019A4F370B5F3BB7 /* Build configuration list for PBXNativeTarget "Pods-Clipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4648FE9392D58775632F4090A4904FA5 /* Debug */,
+				1D10302CDD0F3887627D871121A10D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B8906ECC852BBD4CB7E9F97E99B133D /* Build configuration list for PBXNativeTarget "Pods-ClipKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3567CEB56E26ED81ECA14C565B49623B /* Debug */,
+				E268586263CD77C5A84609AA9942EB2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
