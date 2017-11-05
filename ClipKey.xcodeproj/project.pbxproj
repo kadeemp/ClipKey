@@ -23,6 +23,12 @@
 		F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42DCEB71FA417DD002147BB /* Clipboard.storyboard */; };
 		F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBC1FA44D14002147BB /* KeyManager.swift */; };
 		F42DCEBF1FA46802002147BB /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBE1FA46802002147BB /* KeyViewController.swift */; };
+		F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7121FAEF7E60090AE57 /* CustomButton.swift */; };
+		F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */; };
+		F43AD71E1FAF06B50090AE57 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43AD71D1FAF06B50090AE57 /* Motion.framework */; };
+		F43AD71F1FAF06B50090AE57 /* Motion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F43AD71D1FAF06B50090AE57 /* Motion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F43AD7201FAF06BE0090AE57 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43AD71C1FAF06A70090AE57 /* Material.framework */; };
+		F43AD7211FAF06BE0090AE57 /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F43AD71C1FAF06A70090AE57 /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,20 @@
 			remoteGlobalIDString = F42DCEAA1FA417C8002147BB;
 			remoteInfo = Clipboard;
 		};
+		F43AD71B1FAF06A70090AE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F43AD7161FAF06A70090AE57 /* Material.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 963832361B88DFD80015F710;
+			remoteInfo = Material;
+		};
+		F43AD7221FAF06BE0090AE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F43AD7161FAF06A70090AE57 /* Material.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 963832351B88DFD80015F710;
+			remoteInfo = Material;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +76,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F43AD71F1FAF06B50090AE57 /* Motion.framework in Embed Frameworks */,
+				F43AD7211FAF06BE0090AE57 /* Material.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +121,10 @@
 		F42DCEBC1FA44D14002147BB /* KeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
 		F42DCEBE1FA46802002147BB /* KeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyViewController.swift; sourceTree = "<group>"; };
 		F42DCEC21FA57805002147BB /* ClipKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipKey.entitlements; sourceTree = "<group>"; };
+		F43AD7121FAEF7E60090AE57 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F43AD7161FAF06A70090AE57 /* Material.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Material.xcodeproj; path = ../Material/Material.xcodeproj; sourceTree = "<group>"; };
+		F43AD71D1FAF06B50090AE57 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43AD71E1FAF06B50090AE57 /* Motion.framework in Frameworks */,
+				F43AD7201FAF06BE0090AE57 /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +171,10 @@
 		F42DCE6A1FA41746002147BB = {
 			isa = PBXGroup;
 			children = (
+				F43AD71D1FAF06B50090AE57 /* Motion.framework */,
+				F43AD7161FAF06A70090AE57 /* Material.xcodeproj */,
+				F43AD7121FAEF7E60090AE57 /* CustomButton.swift */,
+				F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */,
 				F42DCE751FA41746002147BB /* ClipKey */,
 				F42DCE8D1FA41746002147BB /* ClipKeyTests */,
 				F42DCE981FA41747002147BB /* ClipKeyUITests */,
@@ -212,6 +244,14 @@
 			path = Clipboard;
 			sourceTree = "<group>";
 		};
+		F43AD7171FAF06A70090AE57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43AD71C1FAF06A70090AE57 /* Material.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +269,7 @@
 			);
 			dependencies = (
 				F42DCEB11FA417C8002147BB /* PBXTargetDependency */,
+				F43AD7231FAF06BE0090AE57 /* PBXTargetDependency */,
 			);
 			name = ClipKey;
 			productName = ClipKey;
@@ -339,6 +380,12 @@
 			mainGroup = F42DCE6A1FA41746002147BB;
 			productRefGroup = F42DCE741FA41746002147BB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F43AD7171FAF06A70090AE57 /* Products */;
+					ProjectRef = F43AD7161FAF06A70090AE57 /* Material.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F42DCE721FA41746002147BB /* ClipKey */,
@@ -348,6 +395,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F43AD71C1FAF06A70090AE57 /* Material.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Material.framework;
+			remoteRef = F43AD71B1FAF06A70090AE57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F42DCE711FA41746002147BB /* Resources */ = {
@@ -393,9 +450,11 @@
 				F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */,
 				F42DCE791FA41746002147BB /* HomeViewController.swift in Sources */,
 				F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */,
+				F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */,
 				F41B25E11FA93E8700B0D15D /* Constants.swift in Sources */,
 				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
 				F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */,
+				F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +500,11 @@
 			isa = PBXTargetDependency;
 			target = F42DCEAA1FA417C8002147BB /* Clipboard */;
 			targetProxy = F42DCEB01FA417C8002147BB /* PBXContainerItemProxy */;
+		};
+		F43AD7231FAF06BE0090AE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Material;
+			targetProxy = F43AD7221FAF06BE0090AE57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

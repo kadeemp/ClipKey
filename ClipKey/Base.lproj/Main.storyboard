@@ -107,15 +107,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-7Y-kAC">
-                                        <rect key="frame" x="0.0" y="22.5" width="365" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-7Y-kAC" customClass="CustomTextField" customModule="ClipKey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22.5" width="343.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="M3X-7Y-kAC" firstAttribute="width" secondItem="KE9-xq-A59" secondAttribute="width" id="fh5-px-iSJ"/>
+                                    <constraint firstItem="M3X-7Y-kAC" firstAttribute="width" secondItem="KE9-xq-A59" secondAttribute="width" multiplier="16/17" id="fh5-px-iSJ"/>
                                     <constraint firstItem="1ID-0F-CyT" firstAttribute="width" secondItem="KE9-xq-A59" secondAttribute="width" id="kIo-yO-Zpy"/>
                                 </constraints>
                             </stackView>
@@ -128,43 +128,67 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-gc-yow">
-                                        <rect key="frame" x="0.0" y="22.5" width="365" height="31"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-gc-yow" customClass="CustomTextField" customModule="ClipKey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22.5" width="343.5" height="31"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingValue">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Fml-j0-IuT" firstAttribute="width" secondItem="nD9-Gx-Q6F" secondAttribute="width" id="0jN-ZE-MXh"/>
-                                    <constraint firstItem="9DV-gc-yow" firstAttribute="width" secondItem="nD9-Gx-Q6F" secondAttribute="width" id="4Gc-5q-SnP"/>
+                                    <constraint firstItem="9DV-gc-yow" firstAttribute="width" secondItem="nD9-Gx-Q6F" secondAttribute="width" multiplier="16/17" id="4Gc-5q-SnP"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-gz-3gc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-gz-3gc" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
                                 <rect key="frame" x="10" y="335" width="168" height="97"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="Rnt-ie-kb7"/>
                                     <constraint firstAttribute="height" constant="97" id="jme-In-ZZs"/>
                                 </constraints>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="cancelButtonPressed:" destination="5mv-6c-YTx" eventType="touchUpInside" id="Wkv-2l-FNU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k8-z9-ECD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k8-z9-ECD" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
                                 <rect key="frame" x="191" y="335" width="168" height="97"/>
+                                <color key="backgroundColor" red="0.53128409385681152" green="0.1304059773683548" blue="0.062678098678588867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="Zdp-Qt-nFl"/>
                                     <constraint firstAttribute="width" constant="168" id="pdL-gW-Rqb"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="5mv-6c-YTx" eventType="touchUpInside" id="XZw-ge-mHc"/>
                                     <segue destination="EyK-ws-nkx" kind="presentation" id="SSY-Up-0nm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="4k8-z9-ECD" secondAttribute="bottom" constant="235" id="1lm-XY-a5g"/>
                             <constraint firstItem="nD9-Gx-Q6F" firstAttribute="leading" secondItem="TH9-cP-WiK" secondAttribute="leading" constant="10" id="40B-OD-Cfn"/>
