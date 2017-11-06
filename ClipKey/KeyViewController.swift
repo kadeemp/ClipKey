@@ -23,6 +23,11 @@ class KeyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         labelTextField.becomeFirstResponder()
+        labelTextField.attributedPlaceholder = NSAttributedString(string: "Key Label", attributes: [NSAttributedStringKey.foregroundColor: UIColor(red:1.0, green:1.0, blue:1.0, alpha:0.5 )])
+        contentTextField.attributedPlaceholder = NSAttributedString(string: "Key Content", attributes: [NSAttributedStringKey.foregroundColor: UIColor(red:1.0, green:1.0, blue:1.0, alpha:0.5 )])
+        self.navigationController?.navigationItem.leftBarButtonItem?.title = "Back"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(backToInitial))
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +39,9 @@ class KeyViewController: UIViewController {
             labelTextField.text = keyLabel
             contentTextField.text = keyContent
         }
+    }
+    @objc func backToInitial(sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
     //MARK:- IB Outlets

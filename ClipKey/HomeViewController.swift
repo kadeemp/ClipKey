@@ -36,6 +36,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = constants.title
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 92/255.0, green: 107/255.0, blue: 140/255.0, alpha: 1)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
         
         //  navigationItem.rightBarButtonItem = editButtonItem
     }
@@ -66,6 +68,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = keysTable.dequeueReusableCell(withIdentifier:constants.defaultCellIdentifier)
         cell?.textLabel?.text = titles[indexPath.row]
+        cell?.textLabel?.textColor = UIColor.white
         return cell!
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

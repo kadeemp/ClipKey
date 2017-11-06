@@ -28,6 +28,12 @@
 		F42DCEBF1FA46802002147BB /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBE1FA46802002147BB /* KeyViewController.swift */; };
 		F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7121FAEF7E60090AE57 /* CustomButton.swift */; };
 		F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */; };
+		F43AD72E1FAFDC5F0090AE57 /* BG@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43AD72D1FAFDC5E0090AE57 /* BG@3x.png */; };
+		F43AD7311FAFDC6C0090AE57 /* BG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43AD72F1FAFDC6B0090AE57 /* BG@2x.png */; };
+		F43AD7321FAFDC6C0090AE57 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = F43AD7301FAFDC6B0090AE57 /* BG.png */; };
+		F43AD7361FAFE9E20090AE57 /* Email Field Underline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43AD7331FAFE9E00090AE57 /* Email Field Underline@3x.png */; };
+		F43AD7371FAFE9E20090AE57 /* Email Field Underline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43AD7341FAFE9E10090AE57 /* Email Field Underline@2x.png */; };
+		F43AD7381FAFE9E20090AE57 /* Email Field Underline.png in Resources */ = {isa = PBXBuildFile; fileRef = F43AD7351FAFE9E10090AE57 /* Email Field Underline.png */; };
 		F70C23E1C3F4A89E39538B6A /* Pods_ClipKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E17FD32EFFAFC56FCD60D1D /* Pods_ClipKey.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +124,12 @@
 		F42DCEC21FA57805002147BB /* ClipKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipKey.entitlements; sourceTree = "<group>"; };
 		F43AD7121FAEF7E60090AE57 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F43AD72D1FAFDC5E0090AE57 /* BG@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG@3x.png"; path = "../../../../BG@3x.png"; sourceTree = "<group>"; };
+		F43AD72F1FAFDC6B0090AE57 /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG@2x.png"; path = "../../../../BG@2x.png"; sourceTree = "<group>"; };
+		F43AD7301FAFDC6B0090AE57 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../BG.png; sourceTree = "<group>"; };
+		F43AD7331FAFE9E00090AE57 /* Email Field Underline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@3x.png"; path = "../../../../Email Field Underline@3x.png"; sourceTree = "<group>"; };
+		F43AD7341FAFE9E10090AE57 /* Email Field Underline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@2x.png"; path = "../../../../Email Field Underline@2x.png"; sourceTree = "<group>"; };
+		F43AD7351FAFE9E10090AE57 /* Email Field Underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline.png"; path = "../../../../Email Field Underline.png"; sourceTree = "<group>"; };
 		F6DD37E24CCDD3A1D04B5FF3 /* Pods_ClipKeyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClipKeyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,6 +230,12 @@
 				F42DCE781FA41746002147BB /* HomeViewController.swift */,
 				F42DCEBC1FA44D14002147BB /* KeyManager.swift */,
 				F42DCE7A1FA41746002147BB /* Main.storyboard */,
+				F43AD7351FAFE9E10090AE57 /* Email Field Underline.png */,
+				F43AD7341FAFE9E10090AE57 /* Email Field Underline@2x.png */,
+				F43AD7331FAFE9E00090AE57 /* Email Field Underline@3x.png */,
+				F43AD7301FAFDC6B0090AE57 /* BG.png */,
+				F43AD72F1FAFDC6B0090AE57 /* BG@2x.png */,
+				F43AD72D1FAFDC5E0090AE57 /* BG@3x.png */,
 				F42DCEBE1FA46802002147BB /* KeyViewController.swift */,
 				F42DCE801FA41746002147BB /* Assets.xcassets */,
 				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
@@ -411,9 +429,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43AD72E1FAFDC5F0090AE57 /* BG@3x.png in Resources */,
 				F42DCE841FA41746002147BB /* LaunchScreen.storyboard in Resources */,
+				F43AD7321FAFDC6C0090AE57 /* BG.png in Resources */,
+				F43AD7371FAFE9E20090AE57 /* Email Field Underline@2x.png in Resources */,
+				F43AD7311FAFDC6C0090AE57 /* BG@2x.png in Resources */,
+				F43AD7361FAFE9E20090AE57 /* Email Field Underline@3x.png in Resources */,
 				F42DCE811FA41746002147BB /* Assets.xcassets in Resources */,
 				F42DCE7C1FA41746002147BB /* Main.storyboard in Resources */,
+				F43AD7381FAFE9E20090AE57 /* Email Field Underline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
