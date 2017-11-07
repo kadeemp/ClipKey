@@ -26,7 +26,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="UJD-Te-XpF">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPw-Bp-JV5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClipKey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPw-Bp-JV5">
                                 <rect key="frame" x="10" y="64" width="365" height="67.5"/>
                                 <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,7 +56,7 @@
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOv-1t-LY5" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
                                         <rect key="frame" x="62" y="444.5" width="251" height="60"/>
-                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.36704173684120178" green="0.46751967072486877" blue="0.7804800271987915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="f9M-Y8-Gsj"/>
                                         </constraints>
@@ -118,19 +118,19 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-9t-EN9">
-                                <rect key="frame" x="21" y="112" width="333.5" height="177"/>
+                                <rect key="frame" x="21" y="112" width="333.5" height="206.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-xq-A59">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="65.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="95"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ID-0F-CyT">
-                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ID-0F-CyT">
+                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Key Label" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-7Y-kAC" customClass="CustomTextField" customModule="ClipKey" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="26.5" width="313.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="56" width="313.5" height="18"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="9HQ-5y-5vq"/>
@@ -140,7 +140,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white underline" translatesAutoresizingMaskIntoConstraints="NO" id="9ab-KX-iln">
-                                                <rect key="frame" x="0.0" y="50.5" width="333.5" height="15"/>
+                                                <rect key="frame" x="0.0" y="80" width="333.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Bkm-Nw-pip"/>
                                                 </constraints>
@@ -153,9 +153,9 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nD9-Gx-Q6F">
-                                        <rect key="frame" x="0.0" y="105.5" width="333.5" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="135" width="333.5" height="71.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Content" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fml-j0-IuT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fml-j0-IuT">
                                                 <rect key="frame" x="0.0" y="0.0" width="333.5" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="ofP-Jp-J4J"/>
@@ -195,21 +195,18 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dGf-E9-lxN">
-                                <rect key="frame" x="21" y="312.5" width="333.5" height="80"/>
+                                <rect key="frame" x="21" y="342" width="333.5" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-gz-3gc" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="60"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="wzN-lg-Wvc"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="40"/>
+                                                <real key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -217,10 +214,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k8-z9-ECD" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
-                                        <rect key="frame" x="177.5" y="0.0" width="156" height="80"/>
-                                        <color key="backgroundColor" red="0.53128409385681152" green="0.1304059773683548" blue="0.062678098678588867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="177.5" y="0.0" width="156" height="60"/>
+                                        <color key="backgroundColor" red="0.36671241258838394" green="0.46528559203122283" blue="0.78203758370452725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="Nbs-if-CMs"/>
+                                            <constraint firstAttribute="height" constant="60" id="Nbs-if-CMs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Save">
@@ -228,7 +225,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="40"/>
+                                                <real key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -239,6 +236,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4k8-z9-ECD" firstAttribute="width" secondItem="sB1-gz-3gc" secondAttribute="width" id="IQQ-0A-po3"/>
+                                    <constraint firstItem="sB1-gz-3gc" firstAttribute="height" secondItem="4k8-z9-ECD" secondAttribute="height" id="toz-mE-yXe"/>
                                 </constraints>
                             </stackView>
                         </subviews>

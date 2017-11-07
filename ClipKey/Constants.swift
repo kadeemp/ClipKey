@@ -13,7 +13,7 @@ public class Constants {
     let userDefaults = UserDefaults(suiteName: "group.AllFiles")
     let label = "label"
     let content = "content"
-    let title = "ClipKey"
+    let title = "Home"
     let keyVCIdentifier = "keyViewController"
     let defaultCellIdentifier = "cell"
     let viewKeySegueIdentifier = "viewKey"
