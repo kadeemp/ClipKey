@@ -26,7 +26,6 @@
 		F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7121FAEF7E60090AE57 /* CustomButton.swift */; };
 		F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */; };
 		F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */; };
-		F4CBA7191FB2F5A1004C6FAC /* TextFieldCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA7181FB2F5A1004C6FAC /* TextFieldCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +113,6 @@
 		F4CBA7151FB2DB72004C6FAC /* Email Field Underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline.png"; path = "../../../../../Email Field Underline.png"; sourceTree = "<group>"; };
 		F4CBA7161FB2DB72004C6FAC /* Email Field Underline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@2x.png"; path = "../../../../../Email Field Underline@2x.png"; sourceTree = "<group>"; };
 		F4CBA7171FB2DB72004C6FAC /* Email Field Underline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@3x.png"; path = "../../../../../Email Field Underline@3x.png"; sourceTree = "<group>"; };
-		F4CBA7181FB2F5A1004C6FAC /* TextFieldCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldCounter.swift; path = "../../../../TextFieldCounter-master/TextFieldCounter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +178,6 @@
 				F42DCE851FA41746002147BB /* Info.plist */,
 				F42DCE7A1FA41746002147BB /* Main.storyboard */,
 				F42DCE781FA41746002147BB /* HomeViewController.swift */,
-				F4CBA7181FB2F5A1004C6FAC /* TextFieldCounter.swift */,
 				F42DCEBE1FA46802002147BB /* KeyViewController.swift */,
 				F42DCEBC1FA44D14002147BB /* KeyManager.swift */,
 				F41B25DE1FA93E7900B0D15D /* Constants.swift */,
@@ -421,7 +418,6 @@
 				F42DCE7F1FA41746002147BB /* ClipKey.xcdatamodeld in Sources */,
 				F42DCE791FA41746002147BB /* HomeViewController.swift in Sources */,
 				F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */,
-				F4CBA7191FB2F5A1004C6FAC /* TextFieldCounter.swift in Sources */,
 				F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */,
 				F41B25E11FA93E8700B0D15D /* Constants.swift in Sources */,
 				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
