@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class KeyViewController: UIViewController {
+class KeyViewController: UIViewController, UITextFieldDelegate {
 
     //MARK:- Variable Declaration
 
@@ -55,10 +55,14 @@ class KeyViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func saveButtonPressed(_ sender: Any) {
+        let labelText = labelTextField.text
+        let contentText = contentTextField.text
+        print(labelText?.characters.count)
         if labelTextField.hasText && contentTextField.hasText {
             if indexOfKey == nil {
                 KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
             } else {
+
                 key.setValue(labelTextField.text, forKey: "label")
                 key.setValue(contentTextField.text, forKey: "content")
                 KeyManager.sharedInstance.save()
@@ -78,6 +82,8 @@ class KeyViewController: UIViewController {
 
         navigationController?.popToRootViewController(animated: true)
     }
+    //MARK:- Textfield Delegate
 
+   
 
 }

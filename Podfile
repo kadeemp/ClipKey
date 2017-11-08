@@ -5,6 +5,7 @@ target 'Clipboard' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+
   # Pods for Clipboard
 
 end
@@ -14,6 +15,7 @@ target 'ClipKey' do
   use_frameworks!
 
   # Pods for ClipKey
+pod 'TextFieldCounter'
 
   target 'ClipKeyTests' do
     inherit! :search_paths

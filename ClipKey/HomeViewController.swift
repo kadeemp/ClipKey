@@ -45,11 +45,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewWillAppear(_ animated: Bool) {
 
         let allKeys = KeyManager.sharedInstance.loadData()
-        print(allKeys)
-        print("~~~~~~~~~~~~~~~~~`")
-        print("~~~~~~~~~~~~~~~~~`")
-        titles = []
-        keys = []
+
         for i in 0..<allKeys.count {
             var key = allKeys[i]
             titles.append(key.value(forKey: constants.label) as! String)
@@ -78,7 +74,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             titles.remove(at: indexPath.row)
             keysTable.deleteRows(at: [indexPath] , with: .fade)
             KeyManager.sharedInstance.remove(index: indexPath.row)
-            print(titles)
+
 
             
         }
@@ -95,9 +91,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if let indexPath = keysTable.indexPathForSelectedRow {
                 let destVC = segue.destination as! KeyViewController
                 destVC.indexOfKey = indexPath.row
-                print(#function)
-                print(indexPath.row)
-
+           
  
 
             }

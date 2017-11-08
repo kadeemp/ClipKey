@@ -95,9 +95,7 @@ class KeyManager {
     }
 
     func addKey(label: String, content:String?) {
-        print(#line)
-        print(#function)
-        print(label)
+
         let entity = NSEntityDescription.entity(forEntityName: "Key", in: (context)!)
         let key = NSManagedObject(entity: entity!, insertInto: context)
         key.setValue(label, forKey: "label")
@@ -125,9 +123,6 @@ class KeyManager {
     /// Remove key at index
 
     func remove(index:Int) {
-
-        print("remove index:\(index)")
-        print("remove count:\(keysArray.count)")
 
         let item = keysArray.remove(at: index)
 
