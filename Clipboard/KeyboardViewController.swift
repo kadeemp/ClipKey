@@ -67,8 +67,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     @IBAction func deleteButtonPressed(_ sender: Any) {
         let proxy = textDocumentProxy
         var selectedText = proxy.selectedText
-        proxy.documentContextBeforeInput
-        proxy.deleteBackward()
+         proxy.documentContextBeforeInput
+
     }
     @IBAction func spaceButtonPressed(_ sender: Any) {
         let text = " "
