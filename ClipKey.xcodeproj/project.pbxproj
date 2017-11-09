@@ -25,6 +25,7 @@
 		F42DCEBF1FA46802002147BB /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBE1FA46802002147BB /* KeyViewController.swift */; };
 		F43AD7141FAEF7E70090AE57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7121FAEF7E60090AE57 /* CustomButton.swift */; };
 		F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */; };
+		F4BA775F1FB3F8980055A858 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = F4BA775E1FB3F8980055A858 /* AppIcon.appiconset */; };
 		F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		F42DCEC21FA57805002147BB /* ClipKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipKey.entitlements; sourceTree = "<group>"; };
 		F43AD7121FAEF7E60090AE57 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F4BA775E1FB3F8980055A858 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4CBA7121FB2DB72004C6FAC /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../../BG.png; sourceTree = "<group>"; };
 		F4CBA7131FB2DB72004C6FAC /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG@2x.png"; path = "../../../../../BG@2x.png"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		F4CBA7111FB2DB5D004C6FAC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F4BA775E1FB3F8980055A858 /* AppIcon.appiconset */,
 				F4CBA7151FB2DB72004C6FAC /* Email Field Underline.png */,
 				F4CBA7161FB2DB72004C6FAC /* Email Field Underline@2x.png */,
 				F4CBA7171FB2DB72004C6FAC /* Email Field Underline@3x.png */,
@@ -375,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4BA775F1FB3F8980055A858 /* AppIcon.appiconset in Resources */,
 				F42DCE841FA41746002147BB /* LaunchScreen.storyboard in Resources */,
 				F42DCE811FA41746002147BB /* Assets.xcassets in Resources */,
 				F42DCE7C1FA41746002147BB /* Main.storyboard in Resources */,
