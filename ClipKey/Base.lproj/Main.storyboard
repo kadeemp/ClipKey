@@ -118,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-9t-EN9">
-                                <rect key="frame" x="21" y="112" width="333.5" height="206.5"/>
+                                <rect key="frame" x="21" y="140" width="333.5" height="206.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-xq-A59">
                                         <rect key="frame" x="0.0" y="0.0" width="333.5" height="95"/>
@@ -195,10 +195,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dGf-E9-lxN">
-                                <rect key="frame" x="21" y="342" width="333.5" height="60"/>
+                                <rect key="frame" x="21" y="370" width="333.5" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-gz-3gc" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Cancel">
@@ -206,7 +206,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="30"/>
+                                                <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="2"/>
@@ -220,10 +220,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k8-z9-ECD" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
-                                        <rect key="frame" x="177.5" y="0.0" width="156" height="60"/>
+                                        <rect key="frame" x="177.5" y="0.0" width="156" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Nbs-if-CMs"/>
+                                            <constraint firstAttribute="height" constant="40" id="Nbs-if-CMs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Save">
@@ -231,7 +231,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="30"/>
+                                                <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -249,7 +249,7 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RG9-9t-EN9" firstAttribute="centerX" secondItem="TH9-cP-WiK" secondAttribute="centerX" id="FLt-nH-oee"/>
-                            <constraint firstItem="RG9-9t-EN9" firstAttribute="top" secondItem="wmh-UQ-q7V" secondAttribute="top" constant="112" id="I55-qq-LXw"/>
+                            <constraint firstItem="RG9-9t-EN9" firstAttribute="top" secondItem="wmh-UQ-q7V" secondAttribute="top" constant="140" id="I55-qq-LXw"/>
                             <constraint firstItem="jct-Zo-ih2" firstAttribute="leading" secondItem="TH9-cP-WiK" secondAttribute="leading" id="Pmu-tH-25N"/>
                             <constraint firstItem="dGf-E9-lxN" firstAttribute="leading" secondItem="RG9-9t-EN9" secondAttribute="leading" id="Z1X-9t-cPc"/>
                             <constraint firstItem="jct-Zo-ih2" firstAttribute="bottom" secondItem="TH9-cP-WiK" secondAttribute="bottom" id="bjV-1Q-OaE"/>

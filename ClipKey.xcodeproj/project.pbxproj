@@ -104,8 +104,6 @@
 		F42DCEC21FA57805002147BB /* ClipKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipKey.entitlements; sourceTree = "<group>"; };
 		F43AD7121FAEF7E60090AE57 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		F4837D7D1FB3CCA600BFE047 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = /Users/home/Desktop/Directory/Swift/ClipKey/ClipKey/AppIcon.appiconset; sourceTree = "<absolute>"; };
-		F4837D7F1FB3CDFB00BFE047 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = /Users/home/Desktop/Directory/Swift/ClipKey/ClipKey/AppIcon.appiconset; sourceTree = "<absolute>"; };
 		F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4CBA7121FB2DB72004C6FAC /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../../BG.png; sourceTree = "<group>"; };
 		F4CBA7131FB2DB72004C6FAC /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG@2x.png"; path = "../../../../../BG@2x.png"; sourceTree = "<group>"; };
@@ -183,8 +181,6 @@
 				F41B25DE1FA93E7900B0D15D /* Constants.swift */,
 				F42DCEC21FA57805002147BB /* ClipKey.entitlements */,
 				F42DCE801FA41746002147BB /* Assets.xcassets */,
-				F4837D7D1FB3CCA600BFE047 /* AppIcon.appiconset */,
-				F4837D7F1FB3CDFB00BFE047 /* AppIcon.appiconset */,
 				F4CBA7111FB2DB5D004C6FAC /* Images */,
 				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
 				F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */,
