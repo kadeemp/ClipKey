@@ -36,15 +36,13 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     override func viewWillAppear(_ animated: Bool) {
 
         if let unwrappedTitles = constants.userDefaults?.array(forKey: constants.titlesKey) as? [String] {
+            print(unwrappedTitles)
             titles = unwrappedTitles
 
         } else {
             titles = []
             clipboardCollection.reloadData()
         }
-
-        titles = constants.userDefaults?.array(forKey: constants.titlesKey) as! [String]
-        print(titles)
         if let unwrappedKeys = (constants.userDefaults?.stringArray(forKey: constants.keysKey)) {
             keys = unwrappedKeys
         }
