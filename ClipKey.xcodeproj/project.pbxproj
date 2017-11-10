@@ -29,6 +29,8 @@
 		F4BA77631FB43AFD0055A858 /* LauchScreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77601FB43AFD0055A858 /* LauchScreen@3x.png */; };
 		F4BA77641FB43AFD0055A858 /* LauchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77611FB43AFD0055A858 /* LauchScreen.png */; };
 		F4BA77651FB43AFD0055A858 /* LauchScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */; };
+		F4BA77671FB4D3450055A858 /* ClipboardCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */; };
+		F4BA77691FB51E520055A858 /* StringExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77681FB51E520055A858 /* StringExtension .swift */; };
 		F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		F4BA77601FB43AFD0055A858 /* LauchScreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LauchScreen@3x.png"; sourceTree = "<group>"; };
 		F4BA77611FB43AFD0055A858 /* LauchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LauchScreen.png; sourceTree = "<group>"; };
 		F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LauchScreen@2x.png"; sourceTree = "<group>"; };
+		F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewLayout.swift; sourceTree = "<group>"; };
+		F4BA77681FB51E520055A858 /* StringExtension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtension .swift"; sourceTree = "<group>"; };
 		F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4CBA7121FB2DB72004C6FAC /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../../BG.png; sourceTree = "<group>"; };
 		F4CBA7131FB2DB72004C6FAC /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG@2x.png"; path = "../../../../../BG@2x.png"; sourceTree = "<group>"; };
@@ -191,9 +195,6 @@
 				F42DCE801FA41746002147BB /* Assets.xcassets */,
 				F4CBA7111FB2DB5D004C6FAC /* Images */,
 				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
-				F4BA77611FB43AFD0055A858 /* LauchScreen.png */,
-				F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */,
-				F4BA77601FB43AFD0055A858 /* LauchScreen@3x.png */,
 				F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */,
 				F41B25A31FA680A700B0D15D /* CoreDataStack.swift */,
 			);
@@ -223,10 +224,12 @@
 			children = (
 				F42DCEB91FA419BC002147BB /* Clipboard.entitlements */,
 				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
+				F4BA77681FB51E520055A858 /* StringExtension .swift */,
 				F42DCEAF1FA417C8002147BB /* Info.plist */,
 				F42DCEB71FA417DD002147BB /* Clipboard.storyboard */,
 				F41B25E21FA95BFA00B0D15D /* Constants.swift */,
 				F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */,
+				F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */,
 			);
 			path = Clipboard;
 			sourceTree = "<group>";
@@ -234,6 +237,9 @@
 		F4CBA7111FB2DB5D004C6FAC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F4BA77611FB43AFD0055A858 /* LauchScreen.png */,
+				F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */,
+				F4BA77601FB43AFD0055A858 /* LauchScreen@3x.png */,
 				F4BA775E1FB3F8980055A858 /* AppIcon.appiconset */,
 				F4CBA7151FB2DB72004C6FAC /* Email Field Underline.png */,
 				F4CBA7161FB2DB72004C6FAC /* Email Field Underline@2x.png */,
@@ -459,8 +465,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */,
+				F4BA77691FB51E520055A858 /* StringExtension .swift in Sources */,
 				F42DCEAE1FA417C8002147BB /* KeyboardViewController.swift in Sources */,
 				F41B25E31FA95BFA00B0D15D /* Constants.swift in Sources */,
+				F4BA77671FB4D3450055A858 /* ClipboardCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

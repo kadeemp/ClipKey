@@ -16,7 +16,7 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     var keyLabel:String = ""
     var keyContent:String = ""
     var indexOfKey:Int? = nil
-    var key = NSManagedObject()
+    var key: NSManagedObject?
 
     //MARK:- View Intitialization
 
@@ -63,8 +63,8 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
                 KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
             } else {
 
-                key.setValue(labelTextField.text, forKey: "label")
-                key.setValue(contentTextField.text, forKey: "content")
+                key!.setValue(labelTextField.text, forKey: "label")
+                key!.setValue(contentTextField.text, forKey: "content")
                 KeyManager.sharedInstance.save()
             }
         }
@@ -73,8 +73,8 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             if indexOfKey == nil {
                 KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
             } else {
-                key.setValue(labelTextField.text, forKey: "label")
-                key.setValue(contentTextField.text, forKey: "content")
+                key!.setValue(labelTextField.text, forKey: "label")
+                key!.setValue(contentTextField.text, forKey: "content")
                 KeyManager.sharedInstance.save()
             }
 

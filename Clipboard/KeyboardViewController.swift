@@ -49,6 +49,9 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         else {
             
         }
+        if let layout = clipboardCollection.collectionViewLayout as? ClipboardCollectionViewLayout {
+            layout.delegate = self
+        }
 
         if let flowLayout = clipboardCollection.collectionViewLayout as? UICollectionViewFlowLayout { flowLayout.estimatedItemSize = CGSize(width:1, height:1) }
      clipboardCollection.reloadData()
@@ -113,8 +116,6 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
 //        proxy.insertText(text)
 //    }
 
-    
-    
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
@@ -131,5 +132,19 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         }
         //self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
+
+}
+extension KeyboardViewController:ClipboardCollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, sizeForTitleAt indexPath: IndexPath) -> CGSize {
+        let sizingLabel = UILabel()
+        sizingLabel.font = UIFont.systemFont(ofSize: 17)
+        sizingLabel.text = titles[indexPath.row]
+        return sizingLabel.intrinsicContentSize
+    }
+
+
+
+
+
 
 }

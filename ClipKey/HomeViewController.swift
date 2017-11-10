@@ -86,14 +86,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //MARK:- Navigation preparation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let allKeys = KeyManager.sharedInstance.loadData()
         if segue.identifier == constants.viewKeySegueIdentifier {
             if let indexPath = keysTable.indexPathForSelectedRow {
                 let destVC = segue.destination as! KeyViewController
                 destVC.indexOfKey = indexPath.row
-           
- 
-
             }
         }
     }
