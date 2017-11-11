@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EyK-ws-nkx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EyK-ws-nkx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +39,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="444.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6yG-iC-1Jc">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6yG-iC-1Jc">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6yG-iC-1Jc" id="it2-6M-w4D">
@@ -118,19 +118,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-9t-EN9">
-                                <rect key="frame" x="21" y="170" width="333.5" height="254"/>
+                                <rect key="frame" x="21" y="170" width="333.5" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kfX-xw-kgN">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="107"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="45"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GC8-Oc-ZTN">
-                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Key Label " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLp-Dy-BEI" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                <rect key="frame" x="0.0" y="62" width="313.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="313.5" height="18"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="1GC-zZ-DFx"/>
@@ -151,28 +145,21 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white underline" translatesAutoresizingMaskIntoConstraints="NO" id="a7y-Yt-YJR">
-                                                <rect key="frame" x="0.0" y="92" width="333.5" height="15"/>
+                                                <rect key="frame" x="0.0" y="30" width="333.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="vZL-ua-H1v"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="GC8-Oc-ZTN" firstAttribute="width" secondItem="kfX-xw-kgN" secondAttribute="width" id="EKu-7y-q7R"/>
                                             <constraint firstItem="FLp-Dy-BEI" firstAttribute="width" secondItem="kfX-xw-kgN" secondAttribute="width" multiplier="16/17" id="cFc-Fv-uoQ"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-xq-A59">
-                                        <rect key="frame" x="0.0" y="147" width="333.5" height="107"/>
+                                        <rect key="frame" x="0.0" y="85" width="333.5" height="45"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ID-0F-CyT">
-                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Key Content" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-7Y-kAC" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                <rect key="frame" x="0.0" y="62" width="313.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="313.5" height="18"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="9HQ-5y-5vq"/>
@@ -193,7 +180,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white underline" translatesAutoresizingMaskIntoConstraints="NO" id="9ab-KX-iln">
-                                                <rect key="frame" x="0.0" y="92" width="333.5" height="15"/>
+                                                <rect key="frame" x="0.0" y="30" width="333.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Bkm-Nw-pip"/>
                                                 </constraints>
@@ -201,13 +188,12 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="M3X-7Y-kAC" firstAttribute="width" secondItem="KE9-xq-A59" secondAttribute="width" multiplier="16/17" id="fh5-px-iSJ"/>
-                                            <constraint firstItem="1ID-0F-CyT" firstAttribute="width" secondItem="KE9-xq-A59" secondAttribute="width" id="kIo-yO-Zpy"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dGf-E9-lxN">
-                                <rect key="frame" x="21" y="447.5" width="333.5" height="40"/>
+                                <rect key="frame" x="21" y="323.5" width="333.5" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-gz-3gc" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="156.5" height="40"/>
