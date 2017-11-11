@@ -54,7 +54,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         }
 
         if let flowLayout = clipboardCollection.collectionViewLayout as? UICollectionViewFlowLayout { flowLayout.estimatedItemSize = CGSize(width:1, height:1) }
-     clipboardCollection.reloadData()
+        clipboardCollection.reloadData()
     }
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -69,9 +69,11 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
 
     @IBAction func deleteButtonPressed(_ sender: Any) {
         let proxy = textDocumentProxy
-        let selectedTextcount = proxy.documentContextBeforeInput?.characters.count as! Int
-        for _ in 0..<selectedTextcount {
-            proxy.deleteBackward()
+        if let selectedTextcount = proxy.documentContextBeforeInput?.characters.count {
+
+            for _ in 0..<selectedTextcount {
+                proxy.deleteBackward()
+            }
         }
     }
     @IBAction func spaceButtonPressed(_ sender: Any) {
@@ -82,7 +84,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     @IBAction func nextKeyboardButtonPressed(_ sender: Any) {
         advanceToNextInputMode()
     }
-   //MARK:- CollectionView Management
+    //MARK:- CollectionView Management
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return titles.count
@@ -96,26 +98,26 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let text = keys[indexPath.row] + " "
-            let proxy = textDocumentProxy
-            proxy.insertText(text)
+        let proxy = textDocumentProxy
+        proxy.insertText(text)
         
     }
     //MARK:- TableView Management
 
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return titles.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = clipboard.dequeueReusableCell(withIdentifier: constants.defaultCellIdentifier)
-//        cell?.textLabel?.text = titles[indexPath.row]
-//        return cell!
-//    }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let text = keys[indexPath.row] + " "
-//        let proxy = textDocumentProxy
-//        proxy.insertText(text)
-//    }
+    //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //        return titles.count
+    //    }
+    //
+    //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //        let cell = clipboard.dequeueReusableCell(withIdentifier: constants.defaultCellIdentifier)
+    //        cell?.textLabel?.text = titles[indexPath.row]
+    //        return cell!
+    //    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        let text = keys[indexPath.row] + " "
+    //        let proxy = textDocumentProxy
+    //        proxy.insertText(text)
+    //    }
 
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
