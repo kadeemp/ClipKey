@@ -17,27 +17,30 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     var keyContent:String = ""
     var indexOfKey:Int? = nil
     var key: NSManagedObject?
+    var isEditIndex:Int?
 
     //MARK:- View Intitialization
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelTextField.becomeFirstResponder()
-        labelTextField.attributedPlaceholder = NSAttributedString(string: "Key Label", attributes: [NSAttributedStringKey.foregroundColor: UIColor(red:1.0, green:1.0, blue:1.0, alpha:0.5 )])
-        contentTextField.attributedPlaceholder = NSAttributedString(string: "Key Content", attributes: [NSAttributedStringKey.foregroundColor: UIColor(red:1.0, green:1.0, blue:1.0, alpha:0.5 )])
+
+
         self.navigationController?.navigationItem.leftBarButtonItem?.title = "Back"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(backToInitial))
 
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        
+
         if indexOfKey != nil {
             key = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
             keyLabel  = KeyManager.sharedInstance.keyLabelAt(index: indexOfKey!)
             keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey!)
             labelTextField.text = keyLabel
             contentTextField.text = keyContent
+        }
+        if isEditIndex != nil{
+            titleLabel.text = "Edit Key"
         }
     }
     @objc func backToInitial(sender: AnyObject) {
@@ -48,10 +51,19 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var labelTextField: UITextField!
     @IBOutlet weak var contentTextField: UITextField!
-
+    @IBOutlet weak var titleLabel: UILabel!
+    
     //MARK:- IB Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {
+        if (labelTextField.isFirstResponder){
+            labelTextField.resignFirstResponder()
+            return
+        }
+        if ( contentTextField.isFirstResponder ) {
+            contentTextField.resignFirstResponder()
+            return 
+        }
         navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func saveButtonPressed(_ sender: Any) {
@@ -84,6 +96,16 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     }
     //MARK:- Textfield Delegate
 
-   
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        checkMaxLength(textField: labelTextField, maxLength: 15)
+        checkMaxLength(textField: contentTextField, maxLength: 279)
+        return true
+    }
+
+    func checkMaxLength(textField: UITextField!, maxLength: Int) {
+        if (textField.text!.characters.count > maxLength) {
+            textField.deleteBackward()
+        }
+    }
 
 }

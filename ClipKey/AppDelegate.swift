@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = UIColor.white
         navigationBarAppearance.barTintColor = UIColor(red: 92/255.0, green: 107/255.0, blue: 140/255.0, alpha: 1)
-
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 

@@ -15,7 +15,7 @@ target 'ClipKey' do
   use_frameworks!
 
   # Pods for ClipKey
-pod 'TextFieldCounter'
+pod "TextFieldEffects"
 
   target 'ClipKeyTests' do
     inherit! :search_paths

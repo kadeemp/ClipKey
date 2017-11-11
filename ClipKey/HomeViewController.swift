@@ -90,6 +90,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if let indexPath = keysTable.indexPathForSelectedRow {
                 let destVC = segue.destination as! KeyViewController
                 destVC.indexOfKey = indexPath.row
+                destVC.isEditIndex = 1
             }
         }
     }

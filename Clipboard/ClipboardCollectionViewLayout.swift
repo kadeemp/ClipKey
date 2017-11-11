@@ -62,20 +62,20 @@ extension ClipboardCollectionViewLayout {
         for item in 0..<collectionView.numberOfItems(inSection: section) {
 
 
-            let indexPath = IndexPath(item :item, section:section )
+            let indexPath = IndexPath(item :item, section:0 )
             let textSize = delegate.collectionView(collectionView, sizeForTitleAt: indexPath)
-            let textHeight = textSize.height + 5 * 2
-            let textWidth = textSize.width
-            let width = cellPadding * 2 + textWidth
+            let textHeight = textSize.height
+            let textWidth = textSize.width + 10
+            let width = cellPadding * 3 + textWidth
 
             //Code for how the cells stack
-            var currentItemMaxX =  nextItemMinX + width
+           // let currentItemMaxX =  nextItemMinX + width
 
-            if (currentItemMaxX > 300 ){
-             nextItemMinX = 0
-
-
-            }
+//            if (currentItemMaxX > contentWidth ){
+//                nextItemMinX = 0
+//                nextItemMinY -= textHeight
+//
+//            }
             //create frame
             let frame = CGRect(x: nextItemMinX, y: nextItemMinX, width: width, height: height)
             let insetFrame = frame.insetBy(dx:0, dy:0)
@@ -88,10 +88,10 @@ extension ClipboardCollectionViewLayout {
             //prepare info to calculate next collection view cell
 
             nextItemMinX = insetFrame.maxX
-            nextItemMinY = insetFrame.maxY
+            //nextItemMinY = frame.maxY
 
 
-            contentHeight = nextItemMinY
+            contentHeight = 300
         }
 
     }

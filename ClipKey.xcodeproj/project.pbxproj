@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F066E5A19663C4B0D52CB3 /* Pods_Clipboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C49041DCFEC4DE75E97F6C /* Pods_Clipboard.framework */; };
+		2BDACFFE8F00620DD695645C /* Pods_ClipKeyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDFBFBB812A44B6604D8097 /* Pods_ClipKeyTests.framework */; };
+		BD826F43D3166681D567FE80 /* Pods_ClipKeyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AA43385AB50CEEC07BAC3A /* Pods_ClipKeyUITests.framework */; };
 		F41B25A41FA680A700B0D15D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25A31FA680A700B0D15D /* CoreDataStack.swift */; };
 		F41B25E11FA93E8700B0D15D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25DE1FA93E7900B0D15D /* Constants.swift */; };
 		F41B25E31FA95BFA00B0D15D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B25E21FA95BFA00B0D15D /* Constants.swift */; };
@@ -32,6 +35,7 @@
 		F4BA77671FB4D3450055A858 /* ClipboardCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */; };
 		F4BA77691FB51E520055A858 /* StringExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77681FB51E520055A858 /* StringExtension .swift */; };
 		F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */; };
+		F59E56EEF8405057429FA394 /* Pods_ClipKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382998D0D1BFE32562AB72AD /* Pods_ClipKey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23C49041DCFEC4DE75E97F6C /* Pods_Clipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clipboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B08EAD35F9763FA990383F8 /* Pods-Clipboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clipboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clipboard/Pods-Clipboard.debug.xcconfig"; sourceTree = "<group>"; };
+		2E71078D0A9931B6641904A7 /* Pods-ClipKey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKey.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKey/Pods-ClipKey.release.xcconfig"; sourceTree = "<group>"; };
+		33EE98D3EAA27B7FB75839E9 /* Pods-ClipKeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKeyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests.release.xcconfig"; sourceTree = "<group>"; };
+		382998D0D1BFE32562AB72AD /* Pods_ClipKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClipKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BB303BA7D53B6317C20EF3 /* Pods-ClipKeyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKeyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKeyUITests/Pods-ClipKeyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5AA43385AB50CEEC07BAC3A /* Pods_ClipKeyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClipKeyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13E4F7078CEDD9EA323F270 /* Pods-Clipboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clipboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clipboard/Pods-Clipboard.release.xcconfig"; sourceTree = "<group>"; };
+		C96C1F4B1A07ACAECFE03C5E /* Pods-ClipKey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKey/Pods-ClipKey.debug.xcconfig"; sourceTree = "<group>"; };
+		E7962CBF71DCC8F0BEC76778 /* Pods-ClipKeyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKeyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKeyUITests/Pods-ClipKeyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F41B25A31FA680A700B0D15D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F41B25DE1FA93E7900B0D15D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F41B25E21FA95BFA00B0D15D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -123,6 +137,8 @@
 		F4CBA7151FB2DB72004C6FAC /* Email Field Underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline.png"; path = "../../../../../Email Field Underline.png"; sourceTree = "<group>"; };
 		F4CBA7161FB2DB72004C6FAC /* Email Field Underline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@2x.png"; path = "../../../../../Email Field Underline@2x.png"; sourceTree = "<group>"; };
 		F4CBA7171FB2DB72004C6FAC /* Email Field Underline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@3x.png"; path = "../../../../../Email Field Underline@3x.png"; sourceTree = "<group>"; };
+		F53234EAA0F6F559C6A7B1BA /* Pods-ClipKeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKeyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEDFBFBB812A44B6604D8097 /* Pods_ClipKeyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClipKeyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59E56EEF8405057429FA394 /* Pods_ClipKey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDACFFE8F00620DD695645C /* Pods_ClipKeyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD826F43D3166681D567FE80 /* Pods_ClipKeyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,12 +170,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F066E5A19663C4B0D52CB3 /* Pods_Clipboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2FC94B123CBE96EBE4DF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				382998D0D1BFE32562AB72AD /* Pods_ClipKey.framework */,
+				FEDFBFBB812A44B6604D8097 /* Pods_ClipKeyTests.framework */,
+				A5AA43385AB50CEEC07BAC3A /* Pods_ClipKeyUITests.framework */,
+				23C49041DCFEC4DE75E97F6C /* Pods_Clipboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6FBB05157DBB491CCFE79F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C96C1F4B1A07ACAECFE03C5E /* Pods-ClipKey.debug.xcconfig */,
+				2E71078D0A9931B6641904A7 /* Pods-ClipKey.release.xcconfig */,
+				F53234EAA0F6F559C6A7B1BA /* Pods-ClipKeyTests.debug.xcconfig */,
+				33EE98D3EAA27B7FB75839E9 /* Pods-ClipKeyTests.release.xcconfig */,
+				E7962CBF71DCC8F0BEC76778 /* Pods-ClipKeyUITests.debug.xcconfig */,
+				A3BB303BA7D53B6317C20EF3 /* Pods-ClipKeyUITests.release.xcconfig */,
+				2B08EAD35F9763FA990383F8 /* Pods-Clipboard.debug.xcconfig */,
+				C13E4F7078CEDD9EA323F270 /* Pods-Clipboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F42DCE6A1FA41746002147BB = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +213,8 @@
 				F42DCE981FA41747002147BB /* ClipKeyUITests */,
 				F42DCEAC1FA417C8002147BB /* Clipboard */,
 				F42DCE741FA41746002147BB /* Products */,
+				D6FBB05157DBB491CCFE79F2 /* Pods */,
+				3D2FC94B123CBE96EBE4DF46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,11 +306,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F42DCE9E1FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKey" */;
 			buildPhases = (
+				D5F4F2709A91E5F7C5062658 /* [CP] Check Pods Manifest.lock */,
 				F42DCE6F1FA41746002147BB /* Sources */,
 				F42DCE701FA41746002147BB /* Frameworks */,
 				F42DCE711FA41746002147BB /* Resources */,
 				F42DCEB61FA417C8002147BB /* Embed App Extensions */,
 				F41B25B61FA933A100B0D15D /* Embed Frameworks */,
+				D5B08697C5D2D462B048D85A /* [CP] Embed Pods Frameworks */,
+				CB585D10572A0DB6BCE251F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,9 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F42DCEA11FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKeyTests" */;
 			buildPhases = (
+				95AE087CEC8580251531DDE9 /* [CP] Check Pods Manifest.lock */,
 				F42DCE861FA41746002147BB /* Sources */,
 				F42DCE871FA41746002147BB /* Frameworks */,
 				F42DCE881FA41746002147BB /* Resources */,
+				AF8E2ACCD98AB77F366FCE8E /* [CP] Embed Pods Frameworks */,
+				83C1E2D706ACBDD71358D149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,9 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F42DCEA41FA41747002147BB /* Build configuration list for PBXNativeTarget "ClipKeyUITests" */;
 			buildPhases = (
+				697A334D2EBE351C476DC01F /* [CP] Check Pods Manifest.lock */,
 				F42DCE911FA41746002147BB /* Sources */,
 				F42DCE921FA41746002147BB /* Frameworks */,
 				F42DCE931FA41746002147BB /* Resources */,
+				8FE196EB8B751C7587DAC1DB /* [CP] Embed Pods Frameworks */,
+				8EEC0EA55E2202533313A831 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F42DCEB31FA417C8002147BB /* Build configuration list for PBXNativeTarget "Clipboard" */;
 			buildPhases = (
+				46EB72F4189B94DB890D843F /* [CP] Check Pods Manifest.lock */,
 				F42DCEA71FA417C8002147BB /* Sources */,
 				F42DCEA81FA417C8002147BB /* Frameworks */,
 				F42DCEA91FA417C8002147BB /* Resources */,
+				A32308E054CA5696C620B0AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,6 +485,174 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46EB72F4189B94DB890D843F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		697A334D2EBE351C476DC01F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83C1E2D706ACBDD71358D149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EEC0EA55E2202533313A831 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClipKeyUITests/Pods-ClipKeyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE196EB8B751C7587DAC1DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClipKeyUITests/Pods-ClipKeyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95AE087CEC8580251531DDE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A32308E054CA5696C620B0AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clipboard/Pods-Clipboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF8E2ACCD98AB77F366FCE8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB585D10572A0DB6BCE251F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClipKey/Pods-ClipKey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B08697C5D2D462B048D85A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClipKey/Pods-ClipKey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F4F2709A91E5F7C5062658 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F42DCE6F1FA41746002147BB /* Sources */ = {
@@ -621,6 +848,7 @@
 		};
 		F42DCE9F1FA41747002147BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96C1F4B1A07ACAECFE03C5E /* Pods-ClipKey.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -642,6 +870,7 @@
 		};
 		F42DCEA01FA41747002147BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E71078D0A9931B6641904A7 /* Pods-ClipKey.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -663,6 +892,7 @@
 		};
 		F42DCEA21FA41747002147BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53234EAA0F6F559C6A7B1BA /* Pods-ClipKeyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -680,6 +910,7 @@
 		};
 		F42DCEA31FA41747002147BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EE98D3EAA27B7FB75839E9 /* Pods-ClipKeyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -697,6 +928,7 @@
 		};
 		F42DCEA51FA41747002147BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7962CBF71DCC8F0BEC76778 /* Pods-ClipKeyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -713,6 +945,7 @@
 		};
 		F42DCEA61FA41747002147BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3BB303BA7D53B6317C20EF3 /* Pods-ClipKeyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -729,6 +962,7 @@
 		};
 		F42DCEB41FA417C8002147BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B08EAD35F9763FA990383F8 /* Pods-Clipboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Clipboard/Clipboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -745,6 +979,7 @@
 		};
 		F42DCEB51FA417C8002147BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13E4F7078CEDD9EA323F270 /* Pods-Clipboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Clipboard/Clipboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
