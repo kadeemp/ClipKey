@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EyK-ws-nkx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4yP-5j-GZ5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,7 +54,7 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="KDR-pL-gVz"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOv-1t-LY5" customClass="CustomButton" customModule="ClipKey" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOv-1t-LY5">
                                         <rect key="frame" x="62" y="444.5" width="251" height="60"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -105,6 +105,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="396" y="520"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="eqX-gm-CVd">
+            <objects>
+                <viewController id="4yP-5j-GZ5" customClass="testViewController" customModule="ClipKey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XrL-OU-odH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UGI-nC-a0y">
+                                <rect key="frame" x="142" y="293" width="233" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="233" id="2f8-oL-YWx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="374" id="OlF-Qw-oyR"/>
+                                    <constraint firstAttribute="width" constant="233" id="gE7-gB-aVi"/>
+                                    <constraint firstAttribute="height" constant="374" id="us9-AR-6ON"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UGI-nC-a0y" firstAttribute="trailing" secondItem="Lup-1Z-nvN" secondAttribute="trailing" id="AJP-uZ-05W"/>
+                            <constraint firstItem="UGI-nC-a0y" firstAttribute="bottom" secondItem="Lup-1Z-nvN" secondAttribute="bottom" id="xi0-RZ-lzf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lup-1Z-nvN"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="UGI-nC-a0y" id="1XC-ez-Msd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3r-48-7lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258.39999999999998" y="1291.304347826087"/>
         </scene>
         <!--Key View Controller-->
         <scene sceneID="9pu-l1-kOS">
@@ -303,4 +336,7 @@
         <image name="BG" width="375" height="667"/>
         <image name="white underline" width="343" height="2"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SSY-Up-0nm"/>
+    </inferredMetricsTieBreakers>
 </document>
