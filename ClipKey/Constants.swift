@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class Constants {
+class Constants {
 
     let userDefaults = UserDefaults(suiteName: "group.AllFiles")
     let label = "label"
     let content = "content"
-    let title = "Home"
+    let title = "ClipKey"
     let keyVCIdentifier = "keyViewController"
     let defaultCellIdentifier = "cell"
     let viewKeySegueIdentifier = "viewKey"

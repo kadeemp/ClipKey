@@ -23,11 +23,13 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        self.navigationController?.navigationItem.leftBarButtonItem?.title = "Back"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(backToInitial))
-
+        self.labelTextField.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: "Back",
+            style: .done,
+            target: self,
+            action: #selector(backToInitial)
+        )
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,14 +41,13 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             labelTextField.text = keyLabel
             contentTextField.text = keyContent
         }
-        if isEditIndex != nil{
+        if isEditIndex != nil {
             titleLabel.text = "Edit Key"
         }
     }
     @objc func backToInitial(sender: AnyObject) {
         self.navigationController?.popToRootViewController(animated: true)
     }
-
     //MARK:- IB Outlets
 
     @IBOutlet weak var labelTextField: UITextField!
@@ -60,7 +61,7 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             labelTextField.resignFirstResponder()
             return
         }
-        if ( contentTextField.isFirstResponder ) {
+        else if ( contentTextField.isFirstResponder ) {
             contentTextField.resignFirstResponder()
             return 
         }
@@ -69,12 +70,12 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     @IBAction func saveButtonPressed(_ sender: Any) {
         let labelText = labelTextField.text
         let contentText = contentTextField.text
-        print(labelText?.characters.count)
+
         if labelTextField.hasText && contentTextField.hasText {
             if indexOfKey == nil {
-                KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
+                KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!,
+                                                 content: contentTextField.text)
             } else {
-
                 key!.setValue(labelTextField.text, forKey: "label")
                 key!.setValue(contentTextField.text, forKey: "content")
                 KeyManager.sharedInstance.save()
@@ -83,15 +84,14 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
         if labelTextField.hasText && !(contentTextField.hasText) {
             contentTextField.text = labelTextField.text
             if indexOfKey == nil {
-                KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!, content: contentTextField.text)
+                KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!,
+                                                 content: contentTextField.text)
             } else {
                 key!.setValue(labelTextField.text, forKey: "label")
                 key!.setValue(contentTextField.text, forKey: "content")
                 KeyManager.sharedInstance.save()
             }
-
         }
-
         navigationController?.popToRootViewController(animated: true)
     }
     //MARK:- Textfield Delegate
@@ -107,5 +107,4 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             textField.deleteBackward()
         }
     }
-
 }

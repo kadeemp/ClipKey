@@ -33,7 +33,6 @@
 		F4BA77641FB43AFD0055A858 /* LauchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77611FB43AFD0055A858 /* LauchScreen.png */; };
 		F4BA77651FB43AFD0055A858 /* LauchScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */; };
 		F4BA77671FB4D3450055A858 /* ClipboardCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */; };
-		F4BA77691FB51E520055A858 /* StringExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77681FB51E520055A858 /* StringExtension .swift */; };
 		F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */; };
 		F59E56EEF8405057429FA394 /* Pods_ClipKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382998D0D1BFE32562AB72AD /* Pods_ClipKey.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +58,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F42DCEAA1FA417C8002147BB;
 			remoteInfo = Clipboard;
+		};
+		F4D7F8A41FBA957D004C2D1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42DCE6B1FA41746002147BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42DCE721FA41746002147BB;
+			remoteInfo = ClipKey;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -129,7 +135,6 @@
 		F4BA77611FB43AFD0055A858 /* LauchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LauchScreen.png; sourceTree = "<group>"; };
 		F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LauchScreen@2x.png"; sourceTree = "<group>"; };
 		F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewLayout.swift; sourceTree = "<group>"; };
-		F4BA77681FB51E520055A858 /* StringExtension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtension .swift"; sourceTree = "<group>"; };
 		F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4CBA7121FB2DB72004C6FAC /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../../BG.png; sourceTree = "<group>"; };
 		F4CBA7131FB2DB72004C6FAC /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG@2x.png"; path = "../../../../../BG@2x.png"; sourceTree = "<group>"; };
@@ -137,6 +142,7 @@
 		F4CBA7151FB2DB72004C6FAC /* Email Field Underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline.png"; path = "../../../../../Email Field Underline.png"; sourceTree = "<group>"; };
 		F4CBA7161FB2DB72004C6FAC /* Email Field Underline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@2x.png"; path = "../../../../../Email Field Underline@2x.png"; sourceTree = "<group>"; };
 		F4CBA7171FB2DB72004C6FAC /* Email Field Underline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Field Underline@3x.png"; path = "../../../../../Email Field Underline@3x.png"; sourceTree = "<group>"; };
+		F4D7F89F1FBA957D004C2D1E /* ClipKeyUITestsWSnapshot.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipKeyUITestsWSnapshot.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53234EAA0F6F559C6A7B1BA /* Pods-ClipKeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClipKeyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClipKeyTests/Pods-ClipKeyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDFBFBB812A44B6604D8097 /* Pods_ClipKeyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClipKeyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,6 +177,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				05F066E5A19663C4B0D52CB3 /* Pods_Clipboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D7F89C1FBA957D004C2D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +238,7 @@
 				F42DCE8A1FA41746002147BB /* ClipKeyTests.xctest */,
 				F42DCE951FA41746002147BB /* ClipKeyUITests.xctest */,
 				F42DCEAB1FA417C8002147BB /* Clipboard.appex */,
+				F4D7F89F1FBA957D004C2D1E /* ClipKeyUITestsWSnapshot.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,7 +286,6 @@
 			children = (
 				F42DCEB91FA419BC002147BB /* Clipboard.entitlements */,
 				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
-				F4BA77681FB51E520055A858 /* StringExtension .swift */,
 				F42DCEAF1FA417C8002147BB /* Info.plist */,
 				F42DCEB71FA417DD002147BB /* Clipboard.storyboard */,
 				F41B25E21FA95BFA00B0D15D /* Constants.swift */,
@@ -386,13 +399,31 @@
 			productReference = F42DCEAB1FA417C8002147BB /* Clipboard.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F4D7F89E1FBA957D004C2D1E /* ClipKeyUITestsWSnapshot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D7F8A81FBA957D004C2D1E /* Build configuration list for PBXNativeTarget "ClipKeyUITestsWSnapshot" */;
+			buildPhases = (
+				F4D7F89B1FBA957D004C2D1E /* Sources */,
+				F4D7F89C1FBA957D004C2D1E /* Frameworks */,
+				F4D7F89D1FBA957D004C2D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4D7F8A51FBA957D004C2D1E /* PBXTargetDependency */,
+			);
+			name = ClipKeyUITestsWSnapshot;
+			productName = ClipKeyUITestsWSnapshot;
+			productReference = F4D7F89F1FBA957D004C2D1E /* ClipKeyUITestsWSnapshot.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F42DCE6B1FA41746002147BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Kadeem Palacios";
 				TargetAttributes = {
@@ -424,6 +455,11 @@
 							};
 						};
 					};
+					F4D7F89E1FBA957D004C2D1E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F42DCE721FA41746002147BB;
+					};
 				};
 			};
 			buildConfigurationList = F42DCE6E1FA41746002147BB /* Build configuration list for PBXProject "ClipKey" */;
@@ -443,6 +479,7 @@
 				F42DCE891FA41746002147BB /* ClipKeyTests */,
 				F42DCE941FA41746002147BB /* ClipKeyUITests */,
 				F42DCEAA1FA417C8002147BB /* Clipboard */,
+				F4D7F89E1FBA957D004C2D1E /* ClipKeyUITestsWSnapshot */,
 			);
 		};
 /* End PBXProject section */
@@ -481,6 +518,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42DCEB81FA417DD002147BB /* Clipboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D7F89D1FBA957D004C2D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,10 +736,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */,
-				F4BA77691FB51E520055A858 /* StringExtension .swift in Sources */,
 				F42DCEAE1FA417C8002147BB /* KeyboardViewController.swift in Sources */,
 				F41B25E31FA95BFA00B0D15D /* Constants.swift in Sources */,
 				F4BA77671FB4D3450055A858 /* ClipboardCollectionViewLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D7F89B1FBA957D004C2D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +766,11 @@
 			isa = PBXTargetDependency;
 			target = F42DCEAA1FA417C8002147BB /* Clipboard */;
 			targetProxy = F42DCEB01FA417C8002147BB /* PBXContainerItemProxy */;
+		};
+		F4D7F8A51FBA957D004C2D1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42DCE721FA41746002147BB /* ClipKey */;
+			targetProxy = F4D7F8A41FBA957D004C2D1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -768,7 +823,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: kadeempalacios@gmail.com (96FS88YWJD)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -825,7 +880,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: kadeempalacios@gmail.com (96FS88YWJD)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -853,6 +908,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ClipKey/ClipKey.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -861,8 +917,10 @@
 				);
 				INFOPLIST_FILE = ClipKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadeempalacios.clipkey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -875,6 +933,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ClipKey/ClipKey.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -883,8 +942,10 @@
 				);
 				INFOPLIST_FILE = ClipKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadeempalacios.clipkey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -965,11 +1026,12 @@
 			baseConfigurationReference = 2B08EAD35F9763FA990383F8 /* Pods-Clipboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Clipboard/Clipboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
 				INFOPLIST_FILE = Clipboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey.Clipboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadeempalacios.clipkey.Clipboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -982,15 +1044,48 @@
 			baseConfigurationReference = C13E4F7078CEDD9EA323F270 /* Pods-Clipboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Clipboard/Clipboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G8EV52YPP;
 				INFOPLIST_FILE = Clipboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKey.Clipboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadeempalacios.clipkey.Clipboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4D7F8A61FBA957D004C2D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKeyUITestsWSnapshot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKeyUITestsWSnapshot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClipKey;
+			};
+			name = Debug;
+		};
+		F4D7F8A71FBA957D004C2D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G8EV52YPP;
+				INFOPLIST_FILE = ClipKeyUITestsWSnapshot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Palacios.ClipKeyUITestsWSnapshot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClipKey;
 			};
 			name = Release;
 		};
@@ -1038,6 +1133,15 @@
 			buildConfigurations = (
 				F42DCEB41FA417C8002147BB /* Debug */,
 				F42DCEB51FA417C8002147BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D7F8A81FBA957D004C2D1E /* Build configuration list for PBXNativeTarget "ClipKeyUITestsWSnapshot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D7F8A61FBA957D004C2D1E /* Debug */,
+				F4D7F8A71FBA957D004C2D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
