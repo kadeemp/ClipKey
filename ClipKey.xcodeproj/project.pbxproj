@@ -247,18 +247,18 @@
 			isa = PBXGroup;
 			children = (
 				F42DCE761FA41746002147BB /* AppDelegate.swift */,
-				F42DCE851FA41746002147BB /* Info.plist */,
 				F42DCE7A1FA41746002147BB /* Main.storyboard */,
 				F42DCE781FA41746002147BB /* HomeViewController.swift */,
 				F42DCEBE1FA46802002147BB /* KeyViewController.swift */,
 				F42DCEBC1FA44D14002147BB /* KeyManager.swift */,
 				F41B25DE1FA93E7900B0D15D /* Constants.swift */,
-				F42DCEC21FA57805002147BB /* ClipKey.entitlements */,
-				F42DCE801FA41746002147BB /* Assets.xcassets */,
-				F4CBA7111FB2DB5D004C6FAC /* Images */,
-				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
-				F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */,
 				F41B25A31FA680A700B0D15D /* CoreDataStack.swift */,
+				F4CBA7111FB2DB5D004C6FAC /* Images */,
+				F42DCE801FA41746002147BB /* Assets.xcassets */,
+				F42DCE851FA41746002147BB /* Info.plist */,
+				F42DCE7D1FA41746002147BB /* ClipKey.xcdatamodeld */,
+				F42DCEC21FA57805002147BB /* ClipKey.entitlements */,
+				F42DCE821FA41746002147BB /* LaunchScreen.storyboard */,
 			);
 			path = ClipKey;
 			sourceTree = "<group>";
