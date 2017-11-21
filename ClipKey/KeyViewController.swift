@@ -101,6 +101,17 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
         checkMaxLength(textField: contentTextField, maxLength: 279)
         return true
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (labelTextField.isFirstResponder){
+            labelTextField.resignFirstResponder()
+
+        }
+        else if ( contentTextField.isFirstResponder ) {
+            contentTextField.resignFirstResponder()
+            
+        }
+        return true 
+    }
 
     func checkMaxLength(textField: UITextField!, maxLength: Int) {
         if (textField.text!.characters.count > maxLength) {
