@@ -304,8 +304,10 @@
                         <viewLayoutGuide key="safeArea" id="TH9-cP-WiK"/>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="sB1-gz-3gc" id="YE5-68-aOQ"/>
                         <outlet property="contentTextField" destination="M3X-7Y-kAC" id="KSA-Y4-jXc"/>
                         <outlet property="labelTextField" destination="FLp-Dy-BEI" id="p5V-8o-6Rq"/>
+                        <outlet property="saveButton" destination="4k8-z9-ECD" id="3Gu-8x-uDE"/>
                         <outlet property="titleLabel" destination="1QC-Wr-PC3" id="qse-jU-6ch"/>
                     </connections>
                 </viewController>
@@ -336,7 +338,4 @@
         <image name="BG" width="375" height="667"/>
         <image name="white underline" width="343" height="2"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bzc-rJ-Dgr"/>
-    </inferredMetricsTieBreakers>
 </document>

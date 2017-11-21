@@ -24,6 +24,8 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.labelTextField.delegate = self
+        //no limit on bottom text field. 
+//        self.contentTextField.delegate = self
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(
             title: "Back",
             style: .done,
@@ -53,7 +55,9 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var labelTextField: UITextField!
     @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet weak var cancelButton: CustomButton!
+    @IBOutlet weak var saveButton: CustomButton!
+
     //MARK:- IB Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {
@@ -68,6 +72,29 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
         navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func saveButtonPressed(_ sender: Any) {
+        submitKey()
+    }
+    //MARK:- Textfield Delegate
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        checkMaxLength(textField: labelTextField, maxLength: 15)
+        checkMaxLength(textField: contentTextField, maxLength: 279)
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (labelTextField.isFirstResponder){
+            contentTextField.becomeFirstResponder()
+
+        }
+        else if ( contentTextField.isFirstResponder ) {
+            submitKey()
+            
+        }
+        return true 
+    }
+//MARK:- Helper Functions
+
+    func submitKey() {
         let labelText = labelTextField.text
         let contentText = contentTextField.text
 
@@ -93,26 +120,8 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             }
         }
         navigationController?.popToRootViewController(animated: true)
-    }
-    //MARK:- Textfield Delegate
 
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        checkMaxLength(textField: labelTextField, maxLength: 15)
-        checkMaxLength(textField: contentTextField, maxLength: 279)
-        return true
     }
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if (labelTextField.isFirstResponder){
-            labelTextField.resignFirstResponder()
-
-        }
-        else if ( contentTextField.isFirstResponder ) {
-            contentTextField.resignFirstResponder()
-            
-        }
-        return true 
-    }
-
     func checkMaxLength(textField: UITextField!, maxLength: Int) {
         if (textField.text!.characters.count > maxLength) {
             textField.deleteBackward()
