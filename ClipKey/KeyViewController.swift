@@ -18,6 +18,7 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     var indexOfKey:Int? = nil
     var key: NSManagedObject?
     var isEditIndex:Int?
+    var keyBoardIsVisible = false 
 
     //MARK:- View Intitialization
 
@@ -32,6 +33,8 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             target: self,
             action: #selector(backToInitial)
         )
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyViewController.keyboardWillHide(notification: )),name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -52,12 +55,14 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     }
     //MARK:- IB Outlets
 
+    @IBOutlet var viewTouchGestureRecognizer: UITapGestureRecognizer!
     @IBOutlet weak var labelTextField: UITextField!
     @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cancelButton: CustomButton!
     @IBOutlet weak var saveButton: CustomButton!
 
+    @IBOutlet weak var stackViewTop_TitleBottom: NSLayoutConstraint!
     //MARK:- IB Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {
@@ -73,6 +78,19 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     }
     @IBAction func saveButtonPressed(_ sender: Any) {
         submitKey()
+    }
+    @IBAction func screenTouched(_ sender: Any) {
+//        if (labelTextField.isFirstResponder){
+//            labelTextField.resignFirstResponder()
+//
+//        }
+//        else if ( contentTextField.isFirstResponder ) {
+//           contentTextField.resignFirstResponder()
+//
+//        }
+
+    print("touched")
+        
     }
     //MARK:- Textfield Delegate
 
@@ -125,6 +143,51 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     func checkMaxLength(textField: UITextField!, maxLength: Int) {
         if (textField.text!.characters.count > maxLength) {
             textField.deleteBackward()
+        }
+    }
+    func animateUp() {
+        // moves views up to avoid keyboard
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: .curveEaseOut,
+                       animations: {
+                        self.stackViewTop_TitleBottom.constant -= 25
+                        //print("~~~~~~~~~")
+                        self.view.layoutIfNeeded()
+                        //         self.didAnimate()
+                 //       print(self.isAnimated)
+        }, completion: { (finished: Bool) in
+     //       self.isAnimated = true
+        })
+    }
+
+    func animateDown() {
+        // moves views down after keyboard leaves
+        UIView.animate(withDuration: 1,
+                       delay: 0,
+                       options: .curveEaseOut,
+                       animations: {
+                        self.stackViewTop_TitleBottom.constant += 25
+                        self.view.layoutIfNeeded()
+                        //      self.isAnimated = false
+        }, completion: nil)
+    }
+
+    @objc func keyboardWillShow (notification: NSNotification) {
+        if (keyBoardIsVisible) {
+            return
+        } else {
+            self.animateUp()
+            self.keyBoardIsVisible = true
+        }
+       // print("initial animate result:" + String((isAnimated)))
+
+    }
+
+    @objc func keyboardWillHide (notification: NSNotification) {
+        if(keyBoardIsVisible) {
+            animateDown()
+            self.keyBoardIsVisible = false
         }
     }
 }
