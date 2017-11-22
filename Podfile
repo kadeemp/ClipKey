@@ -16,6 +16,7 @@ target 'ClipKey' do
 
   # Pods for ClipKey
 pod "TextFieldEffects"
+pod 'SwiftGifOrigin', '~> 1.6.1'
 
   target 'ClipKeyTests' do
     inherit! :search_paths

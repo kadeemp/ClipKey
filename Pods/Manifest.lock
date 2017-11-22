@@ -1,12 +1,15 @@
 PODS:
+  - SwiftGifOrigin (1.6.1)
   - TextFieldEffects (1.4.0)
 
 DEPENDENCIES:
+  - SwiftGifOrigin (~> 1.6.1)
   - TextFieldEffects
 
 SPEC CHECKSUMS:
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: 923940dce3007a18cbf2a31ec7d9e513fb878e84
+PODFILE CHECKSUM: f84cf19eb10fecd7c5edc0faf5f61964c52fc4fa
 
 COCOAPODS: 1.2.1

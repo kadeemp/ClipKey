@@ -38,8 +38,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.title = constants.title
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 92/255.0, green: 107/255.0, blue: 140/255.0, alpha: 1)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
-        
-        //  navigationItem.rightBarButtonItem = editButtonItem
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -54,8 +52,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             KeyManager.sharedInstance.setKeys(keys: keys)
             KeyManager.sharedInstance.setTitles(titles: titles)
         }
-
-
     }
 
     //MARK:- TableView Management
@@ -72,8 +68,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            print(titles)
-
             titles.remove(at: indexPath.row)
             keysTable.deleteRows(at: [indexPath] , with: .fade)
             KeyManager.sharedInstance.remove(index: indexPath.row)

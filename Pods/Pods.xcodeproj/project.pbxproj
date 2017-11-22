@@ -7,89 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E158F43F406A683B59A644B3B5C4B2C /* Pods-ClipKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 203A00D87E346EF4883E835F275E3981 /* Pods-ClipKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0295FF25328224D5D9CD5449F11BC8A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		121BE974DCCA781D615EB39F92A762D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		1E97A13657A05F4C7138F61AC9D5D3D3 /* Pods-Clipboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 378ED046CC66BD70478284F2903DE8DA /* Pods-Clipboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C06DDF00AA7DA196D6187654C274E4B /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */; };
+		2B4E6654C05A11D828792B1B60CB888E /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C8AA7EC02BC0CEAF8CEAFEA9C4569 /* UIImage+Gif.swift */; };
 		3A46821E9344B296C009A7875144652C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3C611438F205B652E88C20B4D7D3681B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3F03C58F42C0F6DDED67BB413B03ED7D /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA25EFDCA620920F50359E4702FEA1 /* YoshikoTextField.swift */; };
 		44E977DBECEF8DAA902EF87DEB21C8BA /* Pods-ClipKeyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2283A128E62143F40EB206EE699F2187 /* Pods-ClipKeyTests-dummy.m */; };
-		6A8B737C1E15995CBA9F049D475DBA74 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */; };
-		7FC304F2A84B30B4930FA954F5AF5A12 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */; };
-		8424B2E0AE7E15995F3F1F22F7CC7157 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */; };
-		8563143B96F5D413FF215438FD79693A /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C803C59120436A273DB50612CEC78 /* TextFieldEffects-dummy.m */; };
-		9377A03A6AB9FE6C774B9134C6550183 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D364D5FF41B3CE8F6D0228FB598EC67 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		971359AEEF53F499118AEE5CE0B3EE2A /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */; };
+		4A7ADADE729173E18C048BC45608B022 /* SwiftGifOrigin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E19058946929BA2C4EB03F3EF1BB3D6 /* SwiftGifOrigin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D856A29FCE6E3F105B175C1CD90E0E /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4846BFBC51AFE6877D9C52932D7A67 /* MadokaTextField.swift */; };
+		56B61999011BC8DDC3372A7AB796D3BF /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EEA19A4D2EF82DA2ADD7532C3F2CC5 /* HoshiTextField.swift */; };
+		6DBC667CFD91D2D378BEED31A871AE29 /* Pods-ClipKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 203A00D87E346EF4883E835F275E3981 /* Pods-ClipKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E8DAE4D9DBF19E39E51E40BCAB302AE /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E357EB17720460136EA4F84A2B53B5 /* KaedeTextField.swift */; };
+		7D777D5BEEFF56D03C6505061C68697A /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33D454787761FC2FD6D63A43325987 /* IsaoTextField.swift */; };
 		9C211319F0B1573FB8C03C0EEBFB13D1 /* Pods-ClipKeyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A726858D697BCACC0960E1AA22929F1E /* Pods-ClipKeyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB009BD19FF0F5D8290B49F8E7B674F /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73ABBABCE4529086F892504F71462BA2 /* TextFieldEffects-dummy.m */; };
 		AF1A903A92DF6FC7ACB48E7B04D79F28 /* Pods-ClipKeyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F8F804D290379C33583B87B0E3FBEDC /* Pods-ClipKeyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF0E6665DD51CE94786F0F8C2CB8337 /* SwiftGifOrigin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA877431EBCDE4ED51403C8FD3A184BF /* SwiftGifOrigin-dummy.m */; };
+		B6617AFFEAD52FBF8DC229CDA4812FE1 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E382529768ACFCA3BB516330C660FA9 /* TextFieldEffects.swift */; };
 		B7DC845AFA8E9F78083FD0EED4C3E90A /* Pods-ClipKeyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F101CB7313482555B2074565B5E385B /* Pods-ClipKeyUITests-dummy.m */; };
-		C3A6B4A7C84B19A3FB8C90C9AB62DA88 /* Pods-ClipKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F7D998474FFE1EE75867B1F523CD /* Pods-ClipKey-dummy.m */; };
-		D823EE705CE6A9047CBFF5B84DADE6D9 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */; };
-		DB2634172818D0CE44EBBB5B1C578A6C /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */; };
-		DFA9AE083FFCB7DE6B6FA6449A18807C /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */; };
+		BA9FD30726F9156CDED5EC452DC6A6A2 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F86CA99D1CD3A1E0A8281129B190668B /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF3B20177E98E2147FED209EBC451852 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01ACDA8FC06BD917D66E8F04BEE60 /* JiroTextField.swift */; };
+		D1231B745DE5D5E64EB2E363170088CD /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7333DAF9EF54DE4E116733CA1EC470 /* AkiraTextField.swift */; };
 		E88BBA8700E46D2652181CA7C2DE3C29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EF488596835208D97E045CC5FE3B5922 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E8F199A46FC0A352EE157B653E474FBD /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA2E132F0F125FA82BC0268A90F3BD /* MinoruTextField.swift */; };
+		EDEDC82C49749AE978B3788C4F157864 /* Pods-ClipKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5F7D998474FFE1EE75867B1F523CD /* Pods-ClipKey-dummy.m */; };
 		F38CF15962A014D8C69E31D550274A6A /* Pods-Clipboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FC4F0FC004C8E15AD96A9826020FCD /* Pods-Clipboard-dummy.m */; };
-		F6A7556793469E184F3DDD39BC799A6E /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */; };
 		FB91AD31EEACE9829F0C94CCEA785AB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FC372409C4087D556E9843AC79D0B951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FE9D736BA10C9AB37F32590C4CB64FCA /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */; };
+		FC08700EF5A40CF30F87CD482C69BEB8 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCB85E796F59AE16AA01A9AF46093F /* YokoTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		622B9EDF1A18784C845312274E50274A /* PBXContainerItemProxy */ = {
+		38FB77344D1600057C1144E519E30078 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80F72C5250584BDA24BA3B35DF0B99AD;
+			remoteGlobalIDString = A566A2BAE3AE60A8699744C218BA556C;
+			remoteInfo = SwiftGifOrigin;
+		};
+		4238724794A2BA26B357E76CD0F8ED98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF80B4EDC243F6D54568D71CCCAA51E;
 			remoteInfo = TextFieldEffects;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008C803C59120436A273DB50612CEC78 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		02C5F7D998474FFE1EE75867B1F523CD /* Pods-ClipKey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClipKey-dummy.m"; sourceTree = "<group>"; };
 		07365B8A510682D678BC07A3C29E7455 /* Pods-ClipKey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ClipKey.modulemap"; sourceTree = "<group>"; };
-		0D9439274272C85664579354CA8700A5 /* Pods_ClipKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKey.framework; path = "Pods-ClipKey.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EEA19A4D2EF82DA2ADD7532C3F2CC5 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		0B4846BFBC51AFE6877D9C52932D7A67 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		0C66177679B23FBE65F3FD0078F9A7E3 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
 		0F101CB7313482555B2074565B5E385B /* Pods-ClipKeyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClipKeyUITests-dummy.m"; sourceTree = "<group>"; };
+		1EF01ACDA8FC06BD917D66E8F04BEE60 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
 		203A00D87E346EF4883E835F275E3981 /* Pods-ClipKey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClipKey-umbrella.h"; sourceTree = "<group>"; };
-		21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
 		2283A128E62143F40EB206EE699F2187 /* Pods-ClipKeyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClipKeyTests-dummy.m"; sourceTree = "<group>"; };
-		244838E579AC29A5BAF1FD66D239B818 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		267B26FA4F64F40EC2A9930F9FC9EE11 /* Pods-Clipboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clipboard-resources.sh"; sourceTree = "<group>"; };
 		36ACF53DF4CE5B4FB21E4EB6EBC0AD1C /* Pods-Clipboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clipboard-acknowledgements.markdown"; sourceTree = "<group>"; };
 		378ED046CC66BD70478284F2903DE8DA /* Pods-Clipboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clipboard-umbrella.h"; sourceTree = "<group>"; };
 		37950C798E2624C65DF996BEC3EDB59C /* Pods-ClipKeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
-		44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
-		4D364D5FF41B3CE8F6D0228FB598EC67 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
-		4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		3F33D454787761FC2FD6D63A43325987 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		4220D54ABFF4E1235CFC4BC93591AF8B /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		42E90960413A5714B30A8F2999CF02CA /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FD7214CD98C7EC7E0E39707FB9285C /* SwiftGifOrigin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-prefix.pch"; sourceTree = "<group>"; };
+		50E357EB17720460136EA4F84A2B53B5 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
 		55F729CB99AA8DDAEDF9E4079FAAB1CC /* Pods-ClipKeyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ClipKeyUITests.modulemap"; sourceTree = "<group>"; };
+		560C8AA7EC02BC0CEAF8CEAFEA9C4569 /* UIImage+Gif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "SwiftGifCommon/UIImage+Gif.swift"; sourceTree = "<group>"; };
 		5A220DE366745867391FDCB134ADED90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E20D4F6822B3090996D6A68B2FB143A /* Pods_ClipKeyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKeyTests.framework; path = "Pods-ClipKeyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8F804D290379C33583B87B0E3FBEDC /* Pods-ClipKeyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClipKeyTests-umbrella.h"; sourceTree = "<group>"; };
+		5FCE055C4539D92D4C13CB91724B5D99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60449CABFBC2007938929B1A3C76B369 /* Pods_Clipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clipboard.framework; path = "Pods-Clipboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6165039DDE39388BBC0CDC609E2336DE /* Pods-ClipKey-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKey-resources.sh"; sourceTree = "<group>"; };
-		63A1EFA9519B11A38F38FF4166CF6540 /* Pods_Clipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clipboard.framework; path = "Pods-Clipboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		806E866C8906CF97A0F2102090265347 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		6E382529768ACFCA3BB516330C660FA9 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		6E7333DAF9EF54DE4E116733CA1EC470 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		7095984100A4C06F102AC80DD52F93E8 /* Pods_ClipKeyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKeyTests.framework; path = "Pods-ClipKeyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73ABBABCE4529086F892504F71462BA2 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		740DFA2ABFF13E021A869B2F42B10A4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794C5874F7E7048518A47BBD6C413DFA /* Pods_ClipKeyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKeyUITests.framework; path = "Pods-ClipKeyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E19058946929BA2C4EB03F3EF1BB3D6 /* SwiftGifOrigin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-umbrella.h"; sourceTree = "<group>"; };
 		808C49C508966CAE2B189742A07D69E8 /* Pods-ClipKeyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClipKeyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
 		86E3EDB5BA0D311B4AEDEE2178388125 /* Pods-Clipboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Clipboard.modulemap"; sourceTree = "<group>"; };
-		86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		87FC4F0FC004C8E15AD96A9826020FCD /* Pods-Clipboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clipboard-dummy.m"; sourceTree = "<group>"; };
-		8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		8DA09431D107EC60020D93D742D7F2F9 /* Pods-ClipKey-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClipKey-acknowledgements.plist"; sourceTree = "<group>"; };
-		8F3C7C4959CDA9A28EF16E11116AAAED /* Pods_ClipKeyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKeyUITests.framework; path = "Pods-ClipKeyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		9265AD1EA865F61A957D9EDF384DE333 /* Pods-ClipKeyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyUITests-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941E73EE749E4669B7D29E803ED22B45 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		96C00BB6B2AC24F7ADC929CAE5F1CF97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9773C24029052FBB9C88B362ECD353CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E02C9C946E587E73CEBC76713796A6F /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
-		A1B985645CADD42277D702523CAFDD1E /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		A030AD87E3EEA11885B778071BBF7AA4 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftGifOrigin.framework; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EA25EFDCA620920F50359E4702FEA1 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		A2F1E666B0953C2820CF05C7A418F6AA /* Pods-ClipKeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A726858D697BCACC0960E1AA22929F1E /* Pods-ClipKeyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClipKeyUITests-umbrella.h"; sourceTree = "<group>"; };
 		A78DAE5D7874921E685DBEC993A6ED7C /* Pods-Clipboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipboard.debug.xcconfig"; sourceTree = "<group>"; };
+		B26B0BDC71D8090B1B7808E0C0CB8285 /* Pods_ClipKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ClipKey.framework; path = "Pods-ClipKey.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA55F4E1AFE300D0929932BF4FDDCFE4 /* Pods-ClipKeyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyTests-frameworks.sh"; sourceTree = "<group>"; };
-		BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		BACA2E132F0F125FA82BC0268A90F3BD /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		BE3B88642E4BE58A7E7641CD52A85F16 /* Pods-Clipboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clipboard.release.xcconfig"; sourceTree = "<group>"; };
 		BE98F9A82BCD15DC79F01F0C7D3ACDD9 /* Pods-ClipKey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKey.release.xcconfig"; sourceTree = "<group>"; };
 		CBB7DC96C28B5CC8D5C3F230C587D7FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,14 +113,18 @@
 		D13BD865CFFA3D389BC27F01BAAF9026 /* Pods-ClipKey-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKey-frameworks.sh"; sourceTree = "<group>"; };
 		D56FAA32F1950EC78C2EA75AD2FCB5AA /* Pods-ClipKeyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClipKeyTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DA8D483344385BA84AA135C543529E38 /* Pods-ClipKey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKey.debug.xcconfig"; sourceTree = "<group>"; };
+		DBCCB85E796F59AE16AA01A9AF46093F /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
 		DDD0257B35A0161C8CE2E970C2322E92 /* Pods-ClipKeyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyTests-resources.sh"; sourceTree = "<group>"; };
 		E3CC0BBBD54095117A5CE10848BF49EE /* Pods-ClipKeyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClipKeyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E5AC5BD5A568109780D9F9C0873E9923 /* Pods-ClipKey-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClipKey-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		E7FE0A95DE3F629A9CD878CEB580F7A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA877431EBCDE4ED51403C8FD3A184BF /* SwiftGifOrigin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftGifOrigin-dummy.m"; sourceTree = "<group>"; };
 		EA96A257CD76373271BD4586DD1F0FB7 /* Pods-ClipKeyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAE44BBB62D0B245AD8416B07C611B65 /* SwiftGifOrigin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftGifOrigin.modulemap; sourceTree = "<group>"; };
 		F5607353171C97BCA9738E16DED30BA0 /* Pods-ClipKeyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClipKeyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F86CA99D1CD3A1E0A8281129B190668B /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
 		F8CF49AB482CB534394630F5A9D872B8 /* Pods-ClipKeyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClipKeyUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F93C4E21B21B8B1A14D648DF0E199E4A /* SwiftGifOrigin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.xcconfig; sourceTree = "<group>"; };
 		FB441561AC25F4C64C7B2392EF9AE289 /* Pods-ClipKeyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClipKeyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +137,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		265B062D7D7D6D3F532C742265310CCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0295FF25328224D5D9CD5449F11BC8A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4308BC7CFE358D5863DD25320CF84208 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,11 +153,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85B82608A8E31E48ABC20F54FAB79562 /* Frameworks */ = {
+		877A5C1BB2B94044CF7E5FD72FA9448D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF488596835208D97E045CC5FE3B5922 /* Foundation.framework in Frameworks */,
+				121BE974DCCA781D615EB39F92A762D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,60 +169,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE9D5E4CF13216D0BD51A768AA75119 /* Frameworks */ = {
+		D79F837D9D7FB5D70167066A0DB06D7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC372409C4087D556E9843AC79D0B951 /* Foundation.framework in Frameworks */,
+				3C611438F205B652E88C20B4D7D3681B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0886DF59C26D74FEC40625067FDEB830 /* Support Files */ = {
+		27396037C7C372E8DDDAC97A8F47E82E /* SwiftGifOrigin */ = {
 			isa = PBXGroup;
 			children = (
-				9773C24029052FBB9C88B362ECD353CC /* Info.plist */,
-				9E02C9C946E587E73CEBC76713796A6F /* TextFieldEffects.modulemap */,
-				A1B985645CADD42277D702523CAFDD1E /* TextFieldEffects.xcconfig */,
-				008C803C59120436A273DB50612CEC78 /* TextFieldEffects-dummy.m */,
-				806E866C8906CF97A0F2102090265347 /* TextFieldEffects-prefix.pch */,
-				4D364D5FF41B3CE8F6D0228FB598EC67 /* TextFieldEffects-umbrella.h */,
+				560C8AA7EC02BC0CEAF8CEAFEA9C4569 /* UIImage+Gif.swift */,
+				4B0FE7010F70177B4F5C3A4F0163C81C /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TextFieldEffects";
+			name = SwiftGifOrigin;
+			path = SwiftGifOrigin;
 			sourceTree = "<group>";
 		};
-		55EDCE76AA05D63B893FD4328BFE3F6B /* TextFieldEffects */ = {
+		3E7C11211CB80A83E41E10F6C5401BBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */,
-				44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */,
-				E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */,
-				4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */,
-				38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */,
-				8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */,
-				9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */,
-				BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */,
-				21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */,
-				86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */,
-				0886DF59C26D74FEC40625067FDEB830 /* Support Files */,
+				60449CABFBC2007938929B1A3C76B369 /* Pods_Clipboard.framework */,
+				B26B0BDC71D8090B1B7808E0C0CB8285 /* Pods_ClipKey.framework */,
+				7095984100A4C06F102AC80DD52F93E8 /* Pods_ClipKeyTests.framework */,
+				794C5874F7E7048518A47BBD6C413DFA /* Pods_ClipKeyUITests.framework */,
+				A030AD87E3EEA11885B778071BBF7AA4 /* SwiftGifOrigin.framework */,
+				42E90960413A5714B30A8F2999CF02CA /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		420AD886C4492F32A245015C84B4532D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27396037C7C372E8DDDAC97A8F47E82E /* SwiftGifOrigin */,
+				61B0915A2A3DABD8C33C2E7E2612A188 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B0FE7010F70177B4F5C3A4F0163C81C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				740DFA2ABFF13E021A869B2F42B10A4A /* Info.plist */,
+				EAE44BBB62D0B245AD8416B07C611B65 /* SwiftGifOrigin.modulemap */,
+				F93C4E21B21B8B1A14D648DF0E199E4A /* SwiftGifOrigin.xcconfig */,
+				EA877431EBCDE4ED51403C8FD3A184BF /* SwiftGifOrigin-dummy.m */,
+				44FD7214CD98C7EC7E0E39707FB9285C /* SwiftGifOrigin-prefix.pch */,
+				7E19058946929BA2C4EB03F3EF1BB3D6 /* SwiftGifOrigin-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftGifOrigin";
+			sourceTree = "<group>";
+		};
+		61B0915A2A3DABD8C33C2E7E2612A188 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				6E7333DAF9EF54DE4E116733CA1EC470 /* AkiraTextField.swift */,
+				07EEA19A4D2EF82DA2ADD7532C3F2CC5 /* HoshiTextField.swift */,
+				3F33D454787761FC2FD6D63A43325987 /* IsaoTextField.swift */,
+				1EF01ACDA8FC06BD917D66E8F04BEE60 /* JiroTextField.swift */,
+				50E357EB17720460136EA4F84A2B53B5 /* KaedeTextField.swift */,
+				0B4846BFBC51AFE6877D9C52932D7A67 /* MadokaTextField.swift */,
+				BACA2E132F0F125FA82BC0268A90F3BD /* MinoruTextField.swift */,
+				6E382529768ACFCA3BB516330C660FA9 /* TextFieldEffects.swift */,
+				DBCCB85E796F59AE16AA01A9AF46093F /* YokoTextField.swift */,
+				A0EA25EFDCA620920F50359E4702FEA1 /* YoshikoTextField.swift */,
+				F37E968EF8AF4F89069FF73D42F5BF7B /* Support Files */,
 			);
 			name = TextFieldEffects;
 			path = TextFieldEffects;
-			sourceTree = "<group>";
-		};
-		61A0B3991C7202D59B819D3E478F7AC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				63A1EFA9519B11A38F38FF4166CF6540 /* Pods_Clipboard.framework */,
-				0D9439274272C85664579354CA8700A5 /* Pods_ClipKey.framework */,
-				5E20D4F6822B3090996D6A68B2FB143A /* Pods_ClipKeyTests.framework */,
-				8F3C7C4959CDA9A28EF16E11116AAAED /* Pods_ClipKeyUITests.framework */,
-				244838E579AC29A5BAF1FD66D239B818 /* TextFieldEffects.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -203,8 +250,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FB9A7A6FC3D2FEAD2BDF6ABD4DDE0449 /* Pods */,
-				61A0B3991C7202D59B819D3E478F7AC6 /* Products */,
+				420AD886C4492F32A245015C84B4532D /* Pods */,
+				3E7C11211CB80A83E41E10F6C5401BBB /* Products */,
 				CFA4AE63D43B1DE394D93CEB1277CAB5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -307,12 +354,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FB9A7A6FC3D2FEAD2BDF6ABD4DDE0449 /* Pods */ = {
+		F37E968EF8AF4F89069FF73D42F5BF7B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				55EDCE76AA05D63B893FD4328BFE3F6B /* TextFieldEffects */,
+				5FCE055C4539D92D4C13CB91724B5D99 /* Info.plist */,
+				941E73EE749E4669B7D29E803ED22B45 /* TextFieldEffects.modulemap */,
+				0C66177679B23FBE65F3FD0078F9A7E3 /* TextFieldEffects.xcconfig */,
+				73ABBABCE4529086F892504F71462BA2 /* TextFieldEffects-dummy.m */,
+				4220D54ABFF4E1235CFC4BC93591AF8B /* TextFieldEffects-prefix.pch */,
+				F86CA99D1CD3A1E0A8281129B190668B /* TextFieldEffects-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,19 +387,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5934E00626B393AF2AC9B1E439ED88C2 /* Headers */ = {
+		6127B20524AE7C3C3F372388083DF762 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9377A03A6AB9FE6C774B9134C6550183 /* TextFieldEffects-umbrella.h in Headers */,
+				BA9FD30726F9156CDED5EC452DC6A6A2 /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1A20610E1CAAA665C3E5DE3844844C7 /* Headers */ = {
+		999EBF26E512D313F4078759714D1EC2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E158F43F406A683B59A644B3B5C4B2C /* Pods-ClipKey-umbrella.h in Headers */,
+				4A7ADADE729173E18C048BC45608B022 /* SwiftGifOrigin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +408,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E97A13657A05F4C7138F61AC9D5D3D3 /* Pods-Clipboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EF0051074960A64449172F788AB163 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC667CFD91D2D378BEED31A871AE29 /* Pods-ClipKey-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,34 +436,35 @@
 			);
 			name = "Pods-ClipKeyUITests";
 			productName = "Pods-ClipKeyUITests";
-			productReference = 8F3C7C4959CDA9A28EF16E11116AAAED /* Pods_ClipKeyUITests.framework */;
+			productReference = 794C5874F7E7048518A47BBD6C413DFA /* Pods_ClipKeyUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		33AB2F7808713879E878466A64874669 /* Pods-ClipKey */ = {
+		29407145E6DEF92069336F8A0FD16903 /* Pods-ClipKey */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 959AEC5597370A4436A76F69E551A58E /* Build configuration list for PBXNativeTarget "Pods-ClipKey" */;
+			buildConfigurationList = 9B91764D043E91E5D0DA6EBB301749CD /* Build configuration list for PBXNativeTarget "Pods-ClipKey" */;
 			buildPhases = (
-				A8138E45ED0644FBD889F569609E85B7 /* Sources */,
-				FBE9D5E4CF13216D0BD51A768AA75119 /* Frameworks */,
-				A1A20610E1CAAA665C3E5DE3844844C7 /* Headers */,
+				AFBB66DD0C0634B1A1338380AB63CD7D /* Sources */,
+				D79F837D9D7FB5D70167066A0DB06D7E /* Frameworks */,
+				D4EF0051074960A64449172F788AB163 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9525467D94125100096BDE17369C1152 /* PBXTargetDependency */,
+				8A41954E514363EC0D180D1EDD695585 /* PBXTargetDependency */,
+				7015F9C85BF95E10B657B69045726A41 /* PBXTargetDependency */,
 			);
 			name = "Pods-ClipKey";
 			productName = "Pods-ClipKey";
-			productReference = 0D9439274272C85664579354CA8700A5 /* Pods_ClipKey.framework */;
+			productReference = B26B0BDC71D8090B1B7808E0C0CB8285 /* Pods_ClipKey.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		80F72C5250584BDA24BA3B35DF0B99AD /* TextFieldEffects */ = {
+		9FF80B4EDC243F6D54568D71CCCAA51E /* TextFieldEffects */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4749CFAF41BBB51BC6C2890331DC23DF /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildConfigurationList = 62954F299537E52E7921D185A6282C64 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
 			buildPhases = (
-				38D1ED2CAFF54836D54742264CEB8FAC /* Sources */,
-				85B82608A8E31E48ABC20F54FAB79562 /* Frameworks */,
-				5934E00626B393AF2AC9B1E439ED88C2 /* Headers */,
+				36C6FE2148188204EC93EA516CB2DC60 /* Sources */,
+				877A5C1BB2B94044CF7E5FD72FA9448D /* Frameworks */,
+				6127B20524AE7C3C3F372388083DF762 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -410,7 +472,24 @@
 			);
 			name = TextFieldEffects;
 			productName = TextFieldEffects;
-			productReference = 244838E579AC29A5BAF1FD66D239B818 /* TextFieldEffects.framework */;
+			productReference = 42E90960413A5714B30A8F2999CF02CA /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A566A2BAE3AE60A8699744C218BA556C /* SwiftGifOrigin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FD523E48A4CE24D2377E6A5671C598 /* Build configuration list for PBXNativeTarget "SwiftGifOrigin" */;
+			buildPhases = (
+				589B028821BE9490E5A50420C0E1B6EB /* Sources */,
+				265B062D7D7D6D3F532C742265310CCB /* Frameworks */,
+				999EBF26E512D313F4078759714D1EC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGifOrigin;
+			productName = SwiftGifOrigin;
+			productReference = A030AD87E3EEA11885B778071BBF7AA4 /* SwiftGifOrigin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C0EC78E719AE21EF6583CDB54BE9E0FB /* Pods-Clipboard */ = {
@@ -427,7 +506,7 @@
 			);
 			name = "Pods-Clipboard";
 			productName = "Pods-Clipboard";
-			productReference = 63A1EFA9519B11A38F38FF4166CF6540 /* Pods_Clipboard.framework */;
+			productReference = 60449CABFBC2007938929B1A3C76B369 /* Pods_Clipboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F5A8D9F109B0F6A3770CE0B2F59843AF /* Pods-ClipKeyTests */ = {
@@ -444,7 +523,7 @@
 			);
 			name = "Pods-ClipKeyTests";
 			productName = "Pods-ClipKeyTests";
-			productReference = 5E20D4F6822B3090996D6A68B2FB143A /* Pods_ClipKeyTests.framework */;
+			productReference = 7095984100A4C06F102AC80DD52F93E8 /* Pods_ClipKeyTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -464,15 +543,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 61A0B3991C7202D59B819D3E478F7AC6 /* Products */;
+			productRefGroup = 3E7C11211CB80A83E41E10F6C5401BBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C0EC78E719AE21EF6583CDB54BE9E0FB /* Pods-Clipboard */,
-				33AB2F7808713879E878466A64874669 /* Pods-ClipKey */,
+				29407145E6DEF92069336F8A0FD16903 /* Pods-ClipKey */,
 				F5A8D9F109B0F6A3770CE0B2F59843AF /* Pods-ClipKeyTests */,
 				1B3298CF15EB488F1D49BA395FD074CE /* Pods-ClipKeyUITests */,
-				80F72C5250584BDA24BA3B35DF0B99AD /* TextFieldEffects */,
+				A566A2BAE3AE60A8699744C218BA556C /* SwiftGifOrigin */,
+				9FF80B4EDC243F6D54568D71CCCAA51E /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
@@ -486,21 +566,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38D1ED2CAFF54836D54742264CEB8FAC /* Sources */ = {
+		36C6FE2148188204EC93EA516CB2DC60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				971359AEEF53F499118AEE5CE0B3EE2A /* AkiraTextField.swift in Sources */,
-				F6A7556793469E184F3DDD39BC799A6E /* HoshiTextField.swift in Sources */,
-				6A8B737C1E15995CBA9F049D475DBA74 /* IsaoTextField.swift in Sources */,
-				8424B2E0AE7E15995F3F1F22F7CC7157 /* JiroTextField.swift in Sources */,
-				DFA9AE083FFCB7DE6B6FA6449A18807C /* KaedeTextField.swift in Sources */,
-				D823EE705CE6A9047CBFF5B84DADE6D9 /* MadokaTextField.swift in Sources */,
-				7FC304F2A84B30B4930FA954F5AF5A12 /* MinoruTextField.swift in Sources */,
-				8563143B96F5D413FF215438FD79693A /* TextFieldEffects-dummy.m in Sources */,
-				2C06DDF00AA7DA196D6187654C274E4B /* TextFieldEffects.swift in Sources */,
-				DB2634172818D0CE44EBBB5B1C578A6C /* YokoTextField.swift in Sources */,
-				FE9D736BA10C9AB37F32590C4CB64FCA /* YoshikoTextField.swift in Sources */,
+				D1231B745DE5D5E64EB2E363170088CD /* AkiraTextField.swift in Sources */,
+				56B61999011BC8DDC3372A7AB796D3BF /* HoshiTextField.swift in Sources */,
+				7D777D5BEEFF56D03C6505061C68697A /* IsaoTextField.swift in Sources */,
+				BF3B20177E98E2147FED209EBC451852 /* JiroTextField.swift in Sources */,
+				6E8DAE4D9DBF19E39E51E40BCAB302AE /* KaedeTextField.swift in Sources */,
+				53D856A29FCE6E3F105B175C1CD90E0E /* MadokaTextField.swift in Sources */,
+				E8F199A46FC0A352EE157B653E474FBD /* MinoruTextField.swift in Sources */,
+				AAB009BD19FF0F5D8290B49F8E7B674F /* TextFieldEffects-dummy.m in Sources */,
+				B6617AFFEAD52FBF8DC229CDA4812FE1 /* TextFieldEffects.swift in Sources */,
+				FC08700EF5A40CF30F87CD482C69BEB8 /* YokoTextField.swift in Sources */,
+				3F03C58F42C0F6DDED67BB413B03ED7D /* YoshikoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +592,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		589B028821BE9490E5A50420C0E1B6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF0E6665DD51CE94786F0F8C2CB8337 /* SwiftGifOrigin-dummy.m in Sources */,
+				2B4E6654C05A11D828792B1B60CB888E /* UIImage+Gif.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F66DE71E070476C25DDA3662410EFB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,22 +609,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8138E45ED0644FBD889F569609E85B7 /* Sources */ = {
+		AFBB66DD0C0634B1A1338380AB63CD7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A6B4A7C84B19A3FB8C90C9AB62DA88 /* Pods-ClipKey-dummy.m in Sources */,
+				EDEDC82C49749AE978B3788C4F157864 /* Pods-ClipKey-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9525467D94125100096BDE17369C1152 /* PBXTargetDependency */ = {
+		7015F9C85BF95E10B657B69045726A41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TextFieldEffects;
-			target = 80F72C5250584BDA24BA3B35DF0B99AD /* TextFieldEffects */;
-			targetProxy = 622B9EDF1A18784C845312274E50274A /* PBXContainerItemProxy */;
+			target = 9FF80B4EDC243F6D54568D71CCCAA51E /* TextFieldEffects */;
+			targetProxy = 4238724794A2BA26B357E76CD0F8ED98 /* PBXContainerItemProxy */;
+		};
+		8A41954E514363EC0D180D1EDD695585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGifOrigin;
+			target = A566A2BAE3AE60A8699744C218BA556C /* SwiftGifOrigin */;
+			targetProxy = 38FB77344D1600057C1144E519E30078 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -575,45 +670,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		11D9B95CE64D8E9F4B9B68850B898B2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8D483344385BA84AA135C543529E38 /* Pods-ClipKey.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ClipKey/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ClipKey/Pods-ClipKey.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ClipKey;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -695,6 +751,40 @@
 			};
 			name = Release;
 		};
+		231D8FA633939D3E0B18A4617497FB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C66177679B23FBE65F3FD0078F9A7E3 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4648FE9392D58775632F4090A4904FA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A78DAE5D7874921E685DBEC993A6ED7C /* Pods-Clipboard.debug.xcconfig */;
@@ -767,9 +857,9 @@
 			};
 			name = Debug;
 		};
-		64D4FEF9401003912CA7260A92834659 /* Debug */ = {
+		5C764D0DCE265AD0C726E9C0E70684DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B985645CADD42277D702523CAFDD1E /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = DA8D483344385BA84AA135C543529E38 /* Pods-ClipKey.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -783,14 +873,53 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKey/Pods-ClipKey.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKey;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FE13CD89A954F03B87B86457A20B9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93C4E21B21B8B1A14D648DF0E199E4A /* SwiftGifOrigin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TextFieldEffects;
+				PRODUCT_NAME = SwiftGifOrigin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -801,44 +930,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		6C4041D9417A5A3A3BF7DE9AEF4CAF42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE98F9A82BCD15DC79F01F0C7D3ACDD9 /* Pods-ClipKey.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ClipKey/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ClipKey/Pods-ClipKey.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ClipKey;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		7D144F724433A09597E3476A57631255 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -888,6 +979,41 @@
 			};
 			name = Debug;
 		};
+		7E1BAC690D50BF22665924DE0B05D40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C66177679B23FBE65F3FD0078F9A7E3 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		923ECFF71D9011C3D62CD356F789373E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA96A257CD76373271BD4586DD1F0FB7 /* Pods-ClipKeyUITests.debug.xcconfig */;
@@ -923,6 +1049,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B3BA3E048DD57873E31BFB05D8FD4BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE98F9A82BCD15DC79F01F0C7D3ACDD9 /* Pods-ClipKey.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ClipKey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ClipKey/Pods-ClipKey.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ClipKey;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B8427BB3A8AEF58036BC18191765D52C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -960,9 +1124,9 @@
 			};
 			name = Release;
 		};
-		D0C64BE99B6A376399082ACF2ABF4257 /* Release */ = {
+		E8837C407B078A0D4AFC69E0CAE7FCAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B985645CADD42277D702523CAFDD1E /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = F93C4E21B21B8B1A14D648DF0E199E4A /* SwiftGifOrigin.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -976,14 +1140,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TextFieldEffects;
+				PRODUCT_NAME = SwiftGifOrigin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1015,11 +1179,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4749CFAF41BBB51BC6C2890331DC23DF /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+		62954F299537E52E7921D185A6282C64 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64D4FEF9401003912CA7260A92834659 /* Debug */,
-				D0C64BE99B6A376399082ACF2ABF4257 /* Release */,
+				7E1BAC690D50BF22665924DE0B05D40E /* Debug */,
+				231D8FA633939D3E0B18A4617497FB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1042,11 +1206,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		959AEC5597370A4436A76F69E551A58E /* Build configuration list for PBXNativeTarget "Pods-ClipKey" */ = {
+		9B91764D043E91E5D0DA6EBB301749CD /* Build configuration list for PBXNativeTarget "Pods-ClipKey" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11D9B95CE64D8E9F4B9B68850B898B2F /* Debug */,
-				6C4041D9417A5A3A3BF7DE9AEF4CAF42 /* Release */,
+				5C764D0DCE265AD0C726E9C0E70684DF /* Debug */,
+				B3BA3E048DD57873E31BFB05D8FD4BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0FD523E48A4CE24D2377E6A5671C598 /* Build configuration list for PBXNativeTarget "SwiftGifOrigin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE13CD89A954F03B87B86457A20B9B8 /* Debug */,
+				E8837C407B078A0D4AFC69E0CAE7FCAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
