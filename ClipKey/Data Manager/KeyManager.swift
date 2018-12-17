@@ -11,7 +11,7 @@ import CoreData
 
 class KeyManager {
 
-    // MARK: - Vars
+    // MARK: - Variables 
     static let sharedInstance = KeyManager()
     let constants = Constants()
     var keysArray = [NSManagedObject]()
@@ -61,21 +61,23 @@ class KeyManager {
     }
 
     func loadDefaults(){
-
         getKeys()
         getTitles()
-
     }
+
     func setKeys(keys:[String]) {
         constants.userDefaults?.set(keys, forKey: "keys")
     }
+
     func setTitles(titles:[String]) {
         constants.userDefaults?.set(titles, forKey: "titles")
     }
+
     func getKeys() -> [String] {
         var keys = (constants.userDefaults?.stringArray(forKey: "keys"))!
         return keys
     }
+
     func getTitles() -> [String] {
         var titles = constants.userDefaults?.array(forKey: "titles") as! [String]
         return titles
@@ -85,10 +87,12 @@ class KeyManager {
         let key = keysArray[index]
         return key
     }
+
     func keyLabelAt(index:Int) -> String {
         let key = keysArray[index]
         return key.value(forKey: "label") as! String
     }
+
     func keyContentAt(index:Int) -> String {
         let key = keysArray[index]
         return key.value(forKey: "content") as! String

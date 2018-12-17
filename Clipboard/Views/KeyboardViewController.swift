@@ -28,10 +28,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
 
     //MARK:- View Intitialization
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+
 
     override func viewWillAppear(_ animated: Bool) {
 
@@ -58,7 +55,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     override func updateViewConstraints() {
         super.updateViewConstraints()
-        // Add custom view sizing constraints here
+
     }
     
     //MARK:- IB Actions
@@ -97,35 +94,18 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let text = keys[indexPath.row] + " "
+        let text = keys[indexPath.row]
         let proxy = textDocumentProxy
         proxy.insertText(text)
         
     }
-    //MARK:- TableView Management
 
-    //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //        return titles.count
-    //    }
-    //
-    //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    //        let cell = clipboard.dequeueReusableCell(withIdentifier: constants.defaultCellIdentifier)
-    //        cell?.textLabel?.text = titles[indexPath.row]
-    //        return cell!
-    //    }
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        let text = keys[indexPath.row] + " "
-    //        let proxy = textDocumentProxy
-    //        proxy.insertText(text)
-    //    }
 
     override func textWillChange(_ textInput: UITextInput?) {
-        // The app is about to change the document's contents. Perform any preparation here.
+
     }
     
     override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-        
         var textColor: UIColor
         let proxy = self.textDocumentProxy
         if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
@@ -133,11 +113,12 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         } else {
             textColor = UIColor.black
         }
-        //self.nextKeyboardButton.setTitleColor(textColor, for: [])
+
     }
 
 }
-extension KeyboardViewController:ClipboardCollectionViewDelegate {
+extension KeyboardViewController: ClipboardCollectionViewDelegate {
+
     func collectionView(_ collectionView: UICollectionView, sizeForTitleAt indexPath: IndexPath) -> CGSize {
         let sizingLabel = UILabel()
         sizingLabel.font = UIFont.systemFont(ofSize: 17)

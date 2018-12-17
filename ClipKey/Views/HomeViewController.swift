@@ -33,25 +33,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     //MARK:- View Intitialization
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = constants.title
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 92/255.0, green: 107/255.0, blue: 140/255.0, alpha: 1)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
-    }
-
     override func viewWillAppear(_ animated: Bool) {
-
-        let allKeys = KeyManager.sharedInstance.loadData()
-        if (titles == [] && keys == []) {
-            for i in 0..<allKeys.count {
-                var key = allKeys[i]
-                titles.append(key.value(forKey: constants.label) as! String)
-                keys.append(key.value(forKey: constants.content) as! String)
-            }
-            KeyManager.sharedInstance.setKeys(keys: keys)
-            KeyManager.sharedInstance.setTitles(titles: titles)
-        }
+        navBarSetup()
+        loadKeys()
     }
 
     //MARK:- TableView Management
@@ -77,8 +61,32 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         performSegue(withIdentifier:constants.viewKeySegueIdentifier, sender: self)
     }
 
-    //MARK:- Navigation preparation
 
+
+    //MARK:- Class Functions
+
+    func navBarSetup() {
+        self.title = constants.title
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 92/255.0, green: 107/255.0, blue: 140/255.0, alpha: 1)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+    }
+
+    func loadKeys() {
+
+        let allKeys = KeyManager.sharedInstance.loadData()
+        if (titles == [] && keys == []) {
+            for i in 0..<allKeys.count {
+                var key = allKeys[i]
+                titles.append(key.value(forKey: constants.label) as! String)
+                keys.append(key.value(forKey: constants.content) as! String)
+            }
+            KeyManager.sharedInstance.setKeys(keys: keys)
+            KeyManager.sharedInstance.setTitles(titles: titles)
+        }
+    }
+
+    //MARK:- Navigation preparation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == constants.viewKeySegueIdentifier {
             if let indexPath = keysTable.indexPathForSelectedRow {

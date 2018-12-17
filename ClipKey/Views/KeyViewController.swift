@@ -22,37 +22,10 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
 
     //MARK:- View Intitialization
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.labelTextField.delegate = self
-        //no limit on bottom text field. 
-//        self.contentTextField.delegate = self
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
-            title: "Back",
-            style: .done,
-            target: self,
-            action: #selector(backToInitial)
-        )
-        NotificationCenter.default.addObserver(self, selector: #selector(KeyViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(KeyViewController.keyboardWillHide(notification: )),name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-    }
-
     override func viewWillAppear(_ animated: Bool) {
+        viewSetup()
+    }
 
-        if indexOfKey != nil {
-            key = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
-            keyLabel  = KeyManager.sharedInstance.keyLabelAt(index: indexOfKey!)
-            keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey!)
-            labelTextField.text = keyLabel
-            contentTextField.text = keyContent
-        }
-        if isEditIndex != nil {
-            titleLabel.text = "Edit Key"
-        }
-    }
-    @objc func backToInitial(sender: AnyObject) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
     //MARK:- IB Outlets
 
     @IBOutlet var viewTouchGestureRecognizer: UITapGestureRecognizer!
@@ -61,8 +34,8 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cancelButton: CustomButton!
     @IBOutlet weak var saveButton: CustomButton!
-
     @IBOutlet weak var stackViewTop_TitleBottom: NSLayoutConstraint!
+
     //MARK:- IB Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {
@@ -79,19 +52,7 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
     @IBAction func saveButtonPressed(_ sender: Any) {
         submitKey()
     }
-    @IBAction func screenTouched(_ sender: Any) {
-//        if (labelTextField.isFirstResponder){
-//            labelTextField.resignFirstResponder()
-//
-//        }
-//        else if ( contentTextField.isFirstResponder ) {
-//           contentTextField.resignFirstResponder()
-//
-//        }
 
-    print("touched")
-        
-    }
     //MARK:- Textfield Delegate
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -110,12 +71,40 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
         }
         return true 
     }
-//MARK:- Helper Functions
+    //MARK:- Class Functions
 
     func submitKey() {
-        let labelText = labelTextField.text
-        let contentText = contentTextField.text
+        keySubmission()
+        navigationController?.popToRootViewController(animated: true)
+    }
 
+    func checkMaxLength(textField: UITextField!, maxLength: Int) {
+        if (textField.text!.characters.count > maxLength) {
+            textField.deleteBackward()
+        }
+    }
+
+    func animateUp() {
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: .curveEaseOut,
+                       animations: {
+                        self.stackViewTop_TitleBottom.constant -= 25
+                        self.view.layoutIfNeeded()
+        }, completion: { (finished: Bool) in
+        })
+    }
+
+    func animateDown() {
+        UIView.animate(withDuration: 1,
+                       delay: 0,
+                       options: .curveEaseOut,
+                       animations: {
+                        self.stackViewTop_TitleBottom.constant += 25
+                        self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+    func keySubmission() {
         if labelTextField.hasText && contentTextField.hasText {
             if indexOfKey == nil {
                 KeyManager.sharedInstance.addKey(label: (labelTextField.text?.capitalized)!,
@@ -137,40 +126,35 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
                 KeyManager.sharedInstance.save()
             }
         }
-        navigationController?.popToRootViewController(animated: true)
-
     }
-    func checkMaxLength(textField: UITextField!, maxLength: Int) {
-        if (textField.text!.characters.count > maxLength) {
-            textField.deleteBackward()
+
+    func createBackButton() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: "Back",
+            style: .done,
+            target: self,
+            action: #selector(backToInitial)
+        )
+    }
+
+    func viewSetup() {
+        if indexOfKey != nil {
+            key = KeyManager.sharedInstance.keyAt(index: indexOfKey!)
+            keyLabel  = KeyManager.sharedInstance.keyLabelAt(index: indexOfKey!)
+            keyContent = KeyManager.sharedInstance.keyContentAt(index: indexOfKey!)
+            labelTextField.text = keyLabel
+            contentTextField.text = keyContent
         }
+        if isEditIndex != nil {
+            titleLabel.text = "Edit Key"
+        }
+        createBackButton()
+        notificationSetup()
+        self.labelTextField.delegate = self
     }
-    func animateUp() {
-        // moves views up to avoid keyboard
-        UIView.animate(withDuration: 0.5,
-                       delay: 0,
-                       options: .curveEaseOut,
-                       animations: {
-                        self.stackViewTop_TitleBottom.constant -= 25
-                        //print("~~~~~~~~~")
-                        self.view.layoutIfNeeded()
-                        //         self.didAnimate()
-                 //       print(self.isAnimated)
-        }, completion: { (finished: Bool) in
-     //       self.isAnimated = true
-        })
-    }
-
-    func animateDown() {
-        // moves views down after keyboard leaves
-        UIView.animate(withDuration: 1,
-                       delay: 0,
-                       options: .curveEaseOut,
-                       animations: {
-                        self.stackViewTop_TitleBottom.constant += 25
-                        self.view.layoutIfNeeded()
-                        //      self.isAnimated = false
-        }, completion: nil)
+    func notificationSetup() {
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyViewController.keyboardWillHide(notification: )),name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     @objc func keyboardWillShow (notification: NSNotification) {
@@ -180,7 +164,6 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             self.animateUp()
             self.keyBoardIsVisible = true
         }
-       // print("initial animate result:" + String((isAnimated)))
 
     }
 
@@ -189,5 +172,9 @@ class KeyViewController: UIViewController, UITextFieldDelegate {
             animateDown()
             self.keyBoardIsVisible = false
         }
+    }
+
+    @objc func backToInitial(sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }

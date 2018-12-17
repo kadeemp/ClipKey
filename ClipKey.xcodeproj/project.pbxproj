@@ -33,7 +33,6 @@
 		F4BA77641FB43AFD0055A858 /* LauchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77611FB43AFD0055A858 /* LauchScreen.png */; };
 		F4BA77651FB43AFD0055A858 /* LauchScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */; };
 		F4BA77671FB4D3450055A858 /* ClipboardCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */; };
-		F4C510DD1FC232DD0040341A /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C510DC1FC232DD0040341A /* testViewController.swift */; };
 		F4C510DF1FC234760040341A /* clipKeySettingsSetup.gif in Resources */ = {isa = PBXBuildFile; fileRef = F4C510DE1FC234760040341A /* clipKeySettingsSetup.gif */; };
 		F4CBA7101FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */; };
 		F59E56EEF8405057429FA394 /* Pods_ClipKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382998D0D1BFE32562AB72AD /* Pods_ClipKey.framework */; };
@@ -137,7 +136,6 @@
 		F4BA77611FB43AFD0055A858 /* LauchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LauchScreen.png; sourceTree = "<group>"; };
 		F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LauchScreen@2x.png"; sourceTree = "<group>"; };
 		F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewLayout.swift; sourceTree = "<group>"; };
-		F4C510DC1FC232DD0040341A /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		F4C510DE1FC234760040341A /* clipKeySettingsSetup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = clipKeySettingsSetup.gif; sourceTree = "<group>"; };
 		F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4CBA7121FB2DB72004C6FAC /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../../BG.png; sourceTree = "<group>"; };
@@ -223,8 +221,6 @@
 		F42DCE6A1FA41746002147BB = {
 			isa = PBXGroup;
 			children = (
-				F43AD7121FAEF7E60090AE57 /* CustomButton.swift */,
-				F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */,
 				F42DCE751FA41746002147BB /* ClipKey */,
 				F42DCE8D1FA41746002147BB /* ClipKeyTests */,
 				F42DCE981FA41747002147BB /* ClipKeyUITests */,
@@ -250,15 +246,12 @@
 		F42DCE751FA41746002147BB /* ClipKey */ = {
 			isa = PBXGroup;
 			children = (
-				F4C510DE1FC234760040341A /* clipKeySettingsSetup.gif */,
 				F42DCE761FA41746002147BB /* AppDelegate.swift */,
+				F4C4A4E52012C09700C49D6F /* Views */,
+				F4C4A4E62012C0AB00C49D6F /* Custom Views */,
+				F4C4A4E72012C0CC00C49D6F /* Data Manager */,
 				F42DCE7A1FA41746002147BB /* Main.storyboard */,
-				F4C510DC1FC232DD0040341A /* testViewController.swift */,
-				F42DCE781FA41746002147BB /* HomeViewController.swift */,
-				F42DCEBE1FA46802002147BB /* KeyViewController.swift */,
-				F42DCEBC1FA44D14002147BB /* KeyManager.swift */,
 				F41B25DE1FA93E7900B0D15D /* Constants.swift */,
-				F41B25A31FA680A700B0D15D /* CoreDataStack.swift */,
 				F4CBA7111FB2DB5D004C6FAC /* Images */,
 				F42DCE801FA41746002147BB /* Assets.xcassets */,
 				F42DCE851FA41746002147BB /* Info.plist */,
@@ -291,19 +284,71 @@
 			isa = PBXGroup;
 			children = (
 				F42DCEB91FA419BC002147BB /* Clipboard.entitlements */,
-				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
+				F4C4A4E42012C08C00C49D6F /* Views */,
 				F42DCEAF1FA417C8002147BB /* Info.plist */,
 				F42DCEB71FA417DD002147BB /* Clipboard.storyboard */,
 				F41B25E21FA95BFA00B0D15D /* Constants.swift */,
-				F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */,
-				F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */,
+				F4C4A4E32012C08400C49D6F /* Cells */,
+				F4C4A4E22012C07C00C49D6F /* Layouts */,
 			);
 			path = Clipboard;
+			sourceTree = "<group>";
+		};
+		F4C4A4E22012C07C00C49D6F /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				F4BA77661FB4D3450055A858 /* ClipboardCollectionViewLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		F4C4A4E32012C08400C49D6F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBA70F1FB25C0D004C6FAC /* ClipboardCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F4C4A4E42012C08C00C49D6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCEAD1FA417C8002147BB /* KeyboardViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4C4A4E52012C09700C49D6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCE781FA41746002147BB /* HomeViewController.swift */,
+				F42DCEBE1FA46802002147BB /* KeyViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4C4A4E62012C0AB00C49D6F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F43AD7121FAEF7E60090AE57 /* CustomButton.swift */,
+				F43AD7131FAEF7E60090AE57 /* CustomTextField.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F4C4A4E72012C0CC00C49D6F /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F42DCEBC1FA44D14002147BB /* KeyManager.swift */,
+				F41B25A31FA680A700B0D15D /* CoreDataStack.swift */,
+			);
+			path = "Data Manager";
 			sourceTree = "<group>";
 		};
 		F4CBA7111FB2DB5D004C6FAC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F4C510DE1FC234760040341A /* clipKeySettingsSetup.gif */,
 				F4BA77611FB43AFD0055A858 /* LauchScreen.png */,
 				F4BA77621FB43AFD0055A858 /* LauchScreen@2x.png */,
 				F4BA77601FB43AFD0055A858 /* LauchScreen@3x.png */,
@@ -718,7 +763,6 @@
 				F41B25E11FA93E8700B0D15D /* Constants.swift in Sources */,
 				F42DCE771FA41746002147BB /* AppDelegate.swift in Sources */,
 				F42DCEBD1FA44D14002147BB /* KeyManager.swift in Sources */,
-				F4C510DD1FC232DD0040341A /* testViewController.swift in Sources */,
 				F43AD7151FAEF7E70090AE57 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
